@@ -172,3 +172,20 @@ This query joins `Products` and `OrderDetails` to calculate the total quantity s
 - `Gorgonzola Telino` and `Gnocchi di nonna Alice` are also in high demand, with over `1,200` units sold each.
 - This analysis will help Northwind to prioritize their stock for high-demand products, prioritize marketing, and create targeted promotions and sales strategies around these best-seller.
 
+### Q4: Who are the top-performing employees based on the total number of orders handled?
+**Query and Output Screenshot:**
+
+![q4 image](./images/q4.png)
+
+**Output Explanation**
+
+This query joins the `Employees` and `Orders` tables to count the total number of orders handled by each employee. By grouping by `EmployeeID`, `FirstName`, and `LastName` and using the `COUNT(o.OrderID)` function, the query calculates the number of orders assigned to each employee. Finally, sorting by `OrdersHandled` in descending order `(DESC)` allows us to highlight the top-performing employees in terms of order volume.
+
+**Key Insights**
+
+- `Margaret Peacock` is the top performer, handling a total of `156` orders.
+- `Janet Leverling` and `Nancy Davolio` follow closely with `127` and `123` orders, respectively.
+- Employees like `Andrew Fuller`, `Laura Callahan`, and `Robert King` have handled over `90` orders, showing a strong performance.
+- The bottom performers in this list, `Steven Buchanan` and `Anne Dodsworth`, handled fewer than `50` orders each, indicating areas where performance improvement may be needed.
+- This analysis will help Northwind identify top performers and may influence decisions on staffing, promotions, and resource allocation to support order fulfillment and customer satisfaction.
+
