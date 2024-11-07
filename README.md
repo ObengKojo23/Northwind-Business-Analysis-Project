@@ -43,6 +43,7 @@ In doing so `SSMS` automatically displays the foreign key relationships among ta
 **Outcome:**
 
 The diagram revealed key relationships (e.g., orders linked to customers, order details tied to orders and products), giving a big-picture view of the data structure.
+
 A screenshot of the database diagram I created.
 ![Database diagram](./images/database_diagramming.png)
 
