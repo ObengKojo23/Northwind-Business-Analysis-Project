@@ -1,3 +1,5 @@
+-- All the sql commands I used for the project
+
 -- Investigating the structure for each table in the database
 SELECT COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, IS_NULLABLE
 FROM INFORMATION_SCHEMA.COLUMNS
