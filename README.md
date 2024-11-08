@@ -38,13 +38,13 @@ To analyze Northwind Traders' business data and gain actionable insights in area
 
 
 
-## 👀 1. Exploring the Database Structure
+## 1. Exploring the Database Structure. 👀 
 My first approach for a clear understanding of the Northwind Database was to investigate the table schema including the individual column names, data types, maximum length for the text based columns, and finally constraints on each column. This was useful in allowing me to get a better understanding of each table's structure.  Tables like `Customers`, `Employees`, `Orders`, `OrderDetails`, `Products`, `Suppliers`, and `Categories` tables were explored using this method.
 
 *Query and Output Screenshot.*
 ![](./images/explore1.png)
 
-## 👀 2. Exploring Table Relationships in the Northwind Database
+## 2. Exploring Table Relationships in the Northwind Database. 🔍
 Understanding the relationships that exists among all tables in the database is key to performing accurate and insightful analyses. In this section, I further explored and documented the relationships that exist among all tables. This served as a foundational knowledge for how I approached all business questions and subsequent queries in the Northwind Database.
 
 For this purpose, I used the following approaches:
@@ -61,6 +61,7 @@ In doing so `SSMS` automatically displays the foreign key relationships among ta
 The diagram helped to revealed key relationships among table. For example; `orders` linked to `customers`, `order details` is tied to `orders` and `products`). This gave a big-picture view of the data structure and query approach.
 
 ### 2.2 Exploring Foreign Key Constraints Using SQL Queries:
+#### Process: 
 I used SQL queries to examine foreign key constraints directly. This provided details on child-parent table connections. This was helpful for confirming which fields link tables and informed me on how to approach my joint queries.
 
 *Query and Output Screenshot.*
@@ -83,6 +84,7 @@ This query help provide the list of all relationships where one table (`the chil
 - `OrderDetails.OrderID` references `Orders.OrderID`. This also shows the connection between `order details` to `specific orders`.
 
 ### 2.3 Detailed Examination of Individual Table Relationships:
+#### Process: 
 I examined each table’s relationships in isolation using `sp_fkeys`. Using `sp_fkeys` on each table helped confirm how it references other tables or how it it is referenced by others.
 
 Example just for the Orders Table. Note that this was done for all the tables.
@@ -94,6 +96,7 @@ Example just for the Orders Table. Note that this was done for all the tables.
 Using this permitted me to see all references to the Orders table and also helped me to understand the dependencies and connections unique to each table.
 
 ### 2.4 Exploring Key Constraints in the Object Explorer:
+#### Process: 
 Finally I used the Object Explorer to further explore the Keys section under each table by right-clicking on each foreign key to view its `dependencies`.
 
 *Screenshot for the orders table dependencies.*
