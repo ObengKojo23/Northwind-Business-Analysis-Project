@@ -9,23 +9,34 @@ To analyze Northwind Traders' business data and gain actionable insights in area
 
 ## Tools and Technologies Used
 
-- **SQL Server Management Studio (SSMS)**: Primary tool for writing, testing, and executing SQL queries on the Northwind database.
-- **SQL Server**: The relational database management system that hosts the Northwind database.
-- **Microsoft Excel**: Used for data visualization and reporting, particularly for exporting query results and creating visual summaries.
-- **SQL Server Reporting Services (SSRS)** *(Optional)*: For creating detailed reports and dashboards from SQL query results.
-- **Common Table Expressions (CTEs)**: Utilized to structure complex queries and improve readability.
-- **Subqueries** and **Joins**: Essential SQL techniques for connecting and analyzing data across multiple tables.
-- **Window Functions**: Advanced SQL functions for performing calculations across sets of table rows.
+- **SQL Server Management Studio (SSMS)** – My primary tool for writing and executing all SQL queries, managing database schemas, and visualizing table relationships.
+- **SQL** – The core language I used for data extraction, transformation, analysis, and aggregation within the database.
+- **Microsoft SQL Server** – The database management system where I stored, queried, and maintained the Northwind database.
+- **Database Diagram Tool (SSMS)** – I used this tool to create visual representations of database relationships, which helped me understand table structures and foreign key dependencies.
+- **JOIN Operations** – Essential SQL techniques I employed to combine data across related tables, enabling multi-dimensional analysis.
+- **Information Schema Views** – I leveraged these views to programmatically access metadata about table constraints and keys, which supported my exploration of table relationships.
+- **Git/GitHub** – I used GitHub as my version control tool to manage and document my project documentation changes and sharing of findings.
+- **Markdown** – I used Markdown for project documentation, including README files, to enhance clarity and structure in my final reports.
+
 
 ## Skills Learned or Employed
 
-- **SQL Querying**: Proficient in foundational SQL, including `SELECT`, `INSERT`, `UPDATE`, and `DELETE`.
-- **Data Aggregation**: Learned to use aggregation functions like `SUM`, `COUNT`, `AVG` to summarize data meaningfully.
-- **Data Analysis**: Developed skills in analyzing business data to answer questions on sales, customer behavior, and employee productivity.
-- **Database Relationships**: Gained practical experience with primary keys, foreign keys, and joins to navigate relational database structures.
-- **Advanced SQL Techniques**: Employed window functions, CTEs, subqueries, and `CASE` statements for complex analyses.
-- **Business Intelligence**: Improved ability to derive actionable insights from raw data, using SQL to model and answer real-world business questions.
-- **Reporting and Visualization**: Used Excel and SSRS for visualizing and presenting data insights effectively.
+- **SQL Querying and Optimization** – Developed efficient SQL queries for data retrieval, filtering, and aggregation, using commands such as `SELECT`, `JOIN`, `GROUP BY`, and `ORDER BY`.
+- **Data Aggregation and Transformation** – Applied SQL functions like `SUM()`, `COUNT()`, `AVG()`, and `DATEDIFF()` for data summarization and analysis.
+- **Advanced SQL Techniques**: Employed window functions, Common Table Expressions (CTEs), subqueries, and `CASE` statements for complex analyses.
+- **Common Table Expressions (CTEs)** – Utilized CTEs for breaking down complex queries into modular, readable components.
+- **Data Validation and Integrity Checks** – Ensured data quality by filtering for completed records and validating relationships across joined tables.
+- **Relational Database Management** – Analyzed table relationships, including many-to-many and one-to-many connections, to accurately link and aggregate data.
+- **Employee Productivity Analysis** – Calculated metrics like order processing times to assess individual employee performance and productivity.
+- **Customer Segmentation** – Performed customer analysis by segmenting based on order frequency, revenue contribution, and purchase behavior.
+- **Product Performance Analysis** – Identified top-selling products through aggregated sales data, aiding in stock prioritization and marketing.
+- **Time-Series Analysis** – Conducted trend analysis over time (e.g., monthly or quarterly sales trends) to identify patterns and inform business decisions.
+- **Data Integrity with Primary and Foreign Keys** – Structured queries based on database keys to maintain data integrity across relationships.
+- **Database Exploration in SSMS** – Used SQL Server Management Studio tools (e.g., Object Explorer and database diagrams) for relationship mapping and data structure understanding.
+- **Business Intelligence and Insights** – Extracted actionable business insights on customer behavior, employee performance, and sales trends from raw data.
+- **Project Documentation** – Documented all analysis steps, queries, and findings to ensure reproducibility and clarity in project deliverables.
+
+
 
 ## 1. Exploring the Database Structure
 Before starting, I will first examine the main tables within the database using DESCRIBE in SQL server. Doing this will allow me to get a better understanding of each table's structure: The tables to investigate includes; Customers, Employees, Orders, OrderDetails, Products, Suppliers, and Categories Tables.
