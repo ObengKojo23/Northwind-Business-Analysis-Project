@@ -64,7 +64,9 @@ To analyze Northwind Traders' business data and gain actionable insights in area
 2. **Download SQL Server Management Studio (SSMS)**  
 You can download SQL Server Management Studio (SSMS) from the official Microsoft website: [Download SSMS](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms).
 
-3. Launch SSMS application and follow along to achieve similar outcome. You can also access the `problem statement` file and all the `SQL queries` I used for this project from the `problem_statement_&_sql`.
+3. Launch SSMS application and follow along to achieve similar outcome.
+   
+5. You can also access the [click here](./problem_statement_&_sql/all_sql) to download the problem statemnet file, or [click here](./problem_statement_&_sql/Project_Statement(NorthwindTraders).docx) to download all a file that contains all the sql queries I used for this project.
 
 ---
 
