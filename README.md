@@ -94,7 +94,7 @@ In doing so `SSMS` automatically displays the foreign key relationships among ta
 ![](./images/explore2.1.png)
 
 - ### Outcome:
-  The diagram helped to revealed key relationships among table. For example; `orders` linked to `customers`, `order details` is tied to `orders` and `products`). This gave a big-picture view of the data structure and query approach.
+  The diagram helped to reveal the key relationships among table. For example; `orders` linked to `customers`, `order details` is tied to `orders` and `products`). This gave a big-picture view of the data structure and query approach.
 
 ### 2.2.2 Exploring Foreign Key Constraints Using SQL Queries:
 - ### Process:
