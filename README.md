@@ -131,21 +131,21 @@ These discovered relationships will be the foundational tool for me to the North
 #### Output Explanation:
 The query counts the number of orders each customer has placed. It then joins the `Customers` table with the `Orders` table on `CustomerID`, selects the `CustomerID` and `CompanyName`, and uses `COUNT()` to get the total orders. The results are grouped by `CustomerID` and `CompanyName` and sorted by the order count in descending order, showing customers with the most orders first.
 
-#### Key Insights:
+#### 🌟Key Insights:
 - `Save-a-lot Markets` has placed the most orders, with `31` total orders, followed closely by `Ernst Handel` with `30` orders.
 - `QUICK-Stop` ranks third with `28` orders, highlighting a strong purchasing relationship with Northwind.
 - Other notable customers include `Folk och fä HB` and `Hungry Owl All-Night Grocers`, each with `19` orders, showing consistent demand.
 - This analysis reveals key customers like `Save-a-lot Markets` and `Ernst Handel`, who are high-value accounts. Northwind could use this insight to consider offering loyalty programs or targeted marketing to further nurture these relationships and encourage repeat business with this customers.
 
-#### Recommendations:
-1. **Implement a Loyalty Program**: Offer discounts or benefits for high-order customers like `Save-a-lot Markets` and `Ernst Handel` to enhance loyalty.
-2. **Targeted Marketing Campaigns**: Create personalized campaigns for top customers to encourage more frequent purchases.
-3. **Dedicated Account Management**: Assign account managers to top customers to strengthen relationships and address specific needs.
+#### 📌Recommendations:
+- **Implement a Loyalty Program**: Offer discounts or benefits for high-order customers like `Save-a-lot Markets` and `Ernst Handel` to enhance loyalty.
+- **Targeted Marketing Campaigns**: Create personalized campaigns for top customers to encourage more frequent purchases.
+- **Dedicated Account Management**: Assign account managers to top customers to strengthen relationships and address specific needs.
 
-#### Impact Analysis:
-1. **Increased Customer Retention**: A loyalty program can improve customer retention rates and revenue stability from key accounts.
-2. **Higher Sales Volume**: Targeted campaigns could increase order frequency, resulting in higher overall sales.
-3. **Enhanced Customer Satisfaction**: Dedicated account management fosters strong customer relationships, potentially leading to increased brand loyalty and positive referrals.
+#### 💥Impact Analysis:
+- **Increased Customer Retention**: A loyalty program can improve customer retention rates and revenue stability from key accounts.
+- **Higher Sales Volume**: Targeted campaigns could increase order frequency, resulting in higher overall sales.
+- **Enhanced Customer Satisfaction**: Dedicated account management fosters strong customer relationships, potentially leading to increased brand loyalty and positive referrals.
 
 ---
 
@@ -158,20 +158,20 @@ The query counts the number of orders each customer has placed. It then joins th
 #### Output Explanation:
 This query calculates the total revenue for each product category. It joins the `Categories`, `Products`, and `Order Details` tables. It selects the `CategoryName` and calculates the total revenue by multiplying `UnitPrice`, `Quantity`, and applying the discount. The result is then rounded to two decimal places using the `ROUND()`. The results are grouped by `CategoryName` and sorted in descending order of total revenue, showing categories with the highest revenue first.
 
-#### Key Insights:
+#### 🌟Key Insights:
 - `Beverages` and `Dairy Products` are the top revenue-generating categories, with `$267,868.18` and `$234,507.29`, respectively.
 - `Confections` and `Meat/Poultry` follow closely, highlighting their importance to Northwind's revenue.
 - This analysis provides insights into the revenue performance of each category. By analyzing the revenue per category, It will help Northwind to be able to prioritize and optimize inventory, marketing, and sales strategies for the most profitable product categories.
 
-#### Recommendations
-1. **Increase Stock for High-Demand Categories**: Ensure sufficient inventory for top categories like `Beverages` and `Dairy Products` to prevent stockouts and support demand.
-2. **Targeted Marketing Campaigns**: Run promotions for high-revenue categories to further boost sales, while also creating campaigns to increase visibility for lower-revenue categories.
-3. **Optimize Pricing Strategy**: Analyze the pricing and discount strategies for low-performing categories to make them more competitive and attractive.
+#### 📌Recommendations
+- **Increase Stock for High-Demand Categories**: Ensure sufficient inventory for top categories like `Beverages` and `Dairy Products` to prevent stockouts and support demand.
+- **Targeted Marketing Campaigns**: Run promotions for high-revenue categories to further boost sales, while also creating campaigns to increase visibility for lower-revenue categories.
+- **Optimize Pricing Strategy**: Analyze the pricing and discount strategies for low-performing categories to make them more competitive and attractive.
 
-#### Impact Analysis
-1. **Enhanced Revenue Growth**: Prioritizing top categories could significantly boost overall revenue, aligning with customer demand.
-2. **Improved Customer Satisfaction**: By ensuring availability of popular items, Northwind can improve customer satisfaction and retention.
-3. **Optimized Resource Allocation**: Focusing resources on profitable categories can improve efficiency in inventory management, marketing, and sales investments.
+#### 💥Impact Analysis
+- **Enhanced Revenue Growth**: Prioritizing top categories could significantly boost overall revenue, aligning with customer demand.
+- **Improved Customer Satisfaction**: By ensuring availability of popular items, Northwind can improve customer satisfaction and retention.
+- **Optimized Resource Allocation**: Focusing resources on profitable categories can improve efficiency in inventory management, marketing, and sales investments.
 
 --- 
 
@@ -184,20 +184,20 @@ This query calculates the total revenue for each product category. It joins the 
 #### Output Explanation:
 This query joins `Products` and `OrderDetails` to calculate the total quantity sold for each product. By grouping by `ProductID` and `ProductName` and using `SUM(od.Quantity)`, I was able to get the total quantity sold for each product. Finaly, sorting by `TotalQuantitySold` in descending order `(DESC)` helps to highlights the most popular products.
 
-#### Key Insights:
+#### 🌟Key Insights:
 - `Camembert Pierrot` and `Raclette Courdavault` are the top-selling products, with `1,577` and `1,496` units sold, respectively.
 - `Gorgonzola Telino` and `Gnocchi di nonna Alice` are also in high demand, with over `1,200` units sold each.
 - This analysis will help Northwind to prioritize their stock for high-demand products, prioritize marketing, and create targeted promotions and sales strategies around these best-seller.
 
-#### Recommendations:
-1. **Stock Prioritization**: Ensure high-demand products like `Camembert Pierrot` and `Raclette Courdavault` are well-stocked to meet demand.
-2. **Targeted Marketing**: Focus promotions on top-selling products to boost sales and attract more customers to popular items.
-3. **Supplier Relationships**: Strengthen partnerships with suppliers of high-demand products to secure better pricing and stable inventory levels.
+#### 📌Recommendations:
+- **Stock Prioritization**: Ensure high-demand products like `Camembert Pierrot` and `Raclette Courdavault` are well-stocked to meet demand.
+- **Targeted Marketing**: Focus promotions on top-selling products to boost sales and attract more customers to popular items.
+- **Supplier Relationships**: Strengthen partnerships with suppliers of high-demand products to secure better pricing and stable inventory levels.
 
-#### Impact Analysis:
-1. **Reduced Stockouts**: Prioritizing stock for popular items reduces the risk of stockouts, improving customer satisfaction and retention.
-2. **Increased Revenue**: Targeted promotions for best-sellers can drive higher sales volumes and boost revenue.
-3. **Operational Efficiency**: Better planning and supplier coordination streamline inventory management, reducing costs and improving profitability.
+#### 💥Impact Analysis:
+- **Reduced Stockouts**: Prioritizing stock for popular items reduces the risk of stockouts, improving customer satisfaction and retention.
+- **Increased Revenue**: Targeted promotions for best-sellers can drive higher sales volumes and boost revenue.
+- **Operational Efficiency**: Better planning and supplier coordination streamline inventory management, reducing costs and improving profitability.
 
 ---
 
@@ -209,19 +209,19 @@ This query joins `Products` and `OrderDetails` to calculate the total quantity s
 #### Output Explanation:
 This query joins the `Employees` and `Orders` tables to count the total number of orders handled by each employee. By grouping by `EmployeeID`, `FirstName`, and `LastName` and using the `COUNT(o.OrderID)` function, the query calculates the number of orders assigned to each employee. Finally, sorting by `OrdersHandled` in descending order `(DESC)` allows us to highlight the top-performing employees in terms of order volume.
 
-#### Key Insights:
+#### 🌟Key Insights:
 - `Margaret Peacock` is the top performer, handling a total of `156` orders.
 - `Janet Leverling` and `Nancy Davolio` follow closely with `127` and `123` orders, respectively.
 - Employees like `Andrew Fuller`, `Laura Callahan`, and `Robert King` have handled over `90` orders, showing a strong performance.
 - The bottom performers in this list, `Steven Buchanan` and `Anne Dodsworth`, handled fewer than `50` orders each, indicating areas where performance improvement may be needed.
 - This analysis will help Northwind identify top performers and may influence decisions on staffing, promotions, and resource allocation to support order fulfillment and customer satisfaction.
 
-#### Recommendations
-1. **Reward Top Performers**: Recognize and incentivize high-performing employees like `Margaret Peacock`, `Janet Leverling`, `Nancy Davolio` and others to maintain morale and productivity.
-2. **Training for Low Performers**: Provide additional training and support to employees with lower order volumes, such as Steven Buchanan and Anne Dodsworth, to boost their productivity.
-3. **Balanced Workload**: Redistribute order assignments to balance workloads and prevent burnout among top-performing employees, enhancing overall efficiency.
+#### 📌Recommendations
+- **Reward Top Performers**: Recognize and incentivize high-performing employees like `Margaret Peacock`, `Janet Leverling`, `Nancy Davolio` and others to maintain morale and productivity.
+- **Training for Low Performers**: Provide additional training and support to employees with lower order volumes, such as Steven Buchanan and Anne Dodsworth, to boost their productivity.
+- **Balanced Workload**: Redistribute order assignments to balance workloads and prevent burnout among top-performing employees, enhancing overall efficiency.
 
-#### Impact Analysis
+#### 💥Impact Analysis
 - **Increased Productivity**: Rewarding top performers and providing support to lower performers can drive productivity across the team.
 - **Improved Employee Retention**: Recognizing and supporting employees fosters a positive work environment, potentially reducing turnover.
 - **Enhanced Customer Satisfaction**: A balanced workload and efficient staff can lead to quicker order handling, improving customer satisfaction and loyalty.
@@ -236,7 +236,7 @@ This query joins the `Employees` and `Orders` tables to count the total number o
 #### Output Explanation:
 This query calculates the total sales for each month by joining the `Orders` and `OrderDetails` tables. By using `YEAR(OrderDate)` and `MONTH(OrderDate)`, the data is grouped by year and month. The `SUM(od.UnitPrice * od.Quantity * (1 - od.Discount))` expression calculates the total sales, factoring in product prices, quantities, and any discounts applied. Sorting the result by year and month ensures that the sales trend is displayed chronologically.
 
-#### Key Insights:
+#### 🌟Key Insights:
 - `Sales Growth`: Over the years, there is a noticeable increase in monthly sales, especially in 1997 and 1998.
 - In `1996`, sales started relatively low but saw significant growth in the latter months, with December reaching over `$45,000` in total sales.
 - `1997` showed consistent sales growth, with peak months like `October` and `December`, which generated over  `$67,000` and `$71,000` in monthly sales, respectively.
@@ -244,12 +244,12 @@ This query calculates the total sales for each month by joining the `Orders` and
 - `Sales Fluctuations`: Some months, such as `May 1998`, show lower sales compared to others, indicating seasonal fluctuations that could be explored further (e.g., impact of holidays or economic factors).
 - `Business Implications`: These trends provide key insights into high and low sales periods, helping to optimize inventory, manage cash flow, and plan marketing campaigns. The high sales months, particularly towards the end of the year, could indicate seasonal demand, while lower sales months could require targeted promotions or new product launches.
 
-#### Recommendations:
-1. **Increase Inventory for Peak Months**: Boost stock levels before high-sales months like October and December to meet demand and avoid stockouts.
-2. **Seasonal Promotions**: Launch promotions in low-sales months, such as May, to boost revenue during slower periods.
-3. **Analyze High-Growth Periods**: Study factors driving high sales in April and December for strategies to replicate this growth in other months.
+#### 📌Recommendations:
+- **Increase Inventory for Peak Months**: Boost stock levels before high-sales months like October and December to meet demand and avoid stockouts.
+- **Seasonal Promotions**: Launch promotions in low-sales months, such as May, to boost revenue during slower periods.
+- **Analyze High-Growth Periods**: Study factors driving high sales in April and December for strategies to replicate this growth in other months.
 
-#### Impact Analysis:
+#### 💥Impact Analysis:
 - **Improved Revenue**: Adequate inventory and targeted promotions can capture higher sales, especially during peak months, maximizing revenue.
 - **Efficient Cash Flow**: Adjusting stock levels based on demand trends ensures efficient cash management and reduces carrying costs.
 - **Optimized Marketing Strategy**: Seasonal insights enable data-driven campaigns, increasing customer engagement and potentially boosting sales in lower-demand months.
@@ -264,7 +264,7 @@ This query calculates the total sales for each month by joining the `Orders` and
 #### Output Explanation:
 This query calculates two key metrics: the percentage of orders that include a discount and the overall impact of those discounts on the revenue. It works by first counting the number of orders in the `OrderDetails` table where the `Discount` is greater than 0 and dividing it by the total number of orders, multiplying by 100 to get the percentage of orders with discounts. The query also calculates the total revenue from orders that included a discount (**DiscountedRevenue**) and compares it with the total revenue from all orders (**TotalRevenue**).
 
-#### Key Insights:
+#### 🌟Key Insights:
 - `38.89%` of the orders in the dataset included a discount.
 - The `discounted revenue` amounts to `$1,265,793.04`, while the `total revenue` from all orders is `$1,354,458.59`.
 - This means that `discounted orders contributed to approximately 93.44%` of the total revenue, indicating a significant impact of discounts on overall sales.
@@ -272,15 +272,15 @@ This query calculates two key metrics: the percentage of orders that include a d
 
 This analysis can help Northwind evaluate the effectiveness of their discount strategies, focusing on optimizing discount programs for higher revenue generation without negatively impacting profitability.
 
-#### Recommendations:
-1. **Optimize Discount Thresholds**: Increase minimum purchase requirements for discounts to maintain revenue while reducing potential profit loss.
-2. **Targeted Discounting**: Offer discounts on high-margin products or underperforming items to maximize revenue without over-discounting popular products.
-3. **Seasonal Promotions**: Implement discounts during peak seasons to boost sales volume, focusing on product categories that benefit most from discount incentives.
+#### 📌Recommendations:
+- **Optimize Discount Thresholds**: Increase minimum purchase requirements for discounts to maintain revenue while reducing potential profit loss.
+- **Targeted Discounting**: Offer discounts on high-margin products or underperforming items to maximize revenue without over-discounting popular products.
+- **Seasonal Promotions**: Implement discounts during peak seasons to boost sales volume, focusing on product categories that benefit most from discount incentives.
 
-#### Impact Analysis:
-1. **Revenue Boost**: Discounts account for a significant portion (93.44%) of total revenue, indicating their power in driving sales volume.
-2. **Profit Margins**: High discount-driven revenue can erode profit margins if not managed; selective discounting could balance revenue gains with profitability.
-3. **Customer Behavior**: A high percentage of discounted orders suggests customer sensitivity to discounts, highlighting the importance of strategic discount placement to maximize customer retention and purchase frequency.
+#### 💥Impact Analysis:
+- **Revenue Boost**: Discounts account for a significant portion (93.44%) of total revenue, indicating their power in driving sales volume.
+- **Profit Margins**: High discount-driven revenue can erode profit margins if not managed; selective discounting could balance revenue gains with profitability.
+- **Customer Behavior**: A high percentage of discounted orders suggests customer sensitivity to discounts, highlighting the importance of strategic discount placement to maximize customer retention and purchase frequency.
 
 ---
 
@@ -290,31 +290,24 @@ This analysis can help Northwind evaluate the effectiveness of their discount st
 ![q8 image](./images/q8.png)
 
 #### Output Explanation:
+I used this query  to join `Orders`, `Customers`, and `Order Details` to calculate the total revenue generated by each region. By grouping the results by `Region` and using the formula `SUM(od.UnitPrice * od.Quantity * (1 - od.Discount))`, I computed the total revenue per region. The results was then sorted by `TotalRevenue` in descending order `(DESC)` to highlight the regions that generate the highest revenue.
 
-This query joins `Orders`, `Customers`, and `Order Details` to calculate the total revenue generated by each region. By grouping the results by `Region` and using the formula `SUM(od.UnitPrice * od.Quantity * (1 - od.Discount))`, we compute the total revenue per region. The results are then sorted by `TotalRevenue` in descending order `(DESC)` to highlight the regions that generate the highest revenue.
+#### 🌟Key Insights:
+- The *NULL* region, which I presume represents customers with missing or unspecified region information happens to generate the highest revenue with a total of `$750,149.53`.
+- *ID Region* follows with `$104,361.95` in total revenue.
+- Regions such as `SP`, `RJ`, and `NM` are also significant revenue generatoring areas as they contribute over `$50,000` in revenue each.
+- Less prominent regions like `DF` and `MT` generate relatively low revenue, with totals revenues under `$2,000`.
 
-#### Key Insights:
+#### 📌 *Recommendations:*
+- *Improve Data Quality in the `Region` Field*: Since the `NULL` region generates the highest revenue, it’s crucial for Northwind to investigate and update missing regional information. Standardizing this field will enable better geographic insights and more targeted strategies.
+- *Focus Marketing Efforts on High-Revenue Regions*: Targeted marketing campaigns should prioritize regions with high revenue, such as `ID`, `SP`, and `RJ`. Ability to tailor a promotion or special sales offers for these areas could further enhance revenue and customer loyalty.
+- *Explore Growth Opportunities in Low-Revenue Regions*: Regions like `DF` and `MT` present opportunities for growth. Strategies like localized advertising, regional partnerships, or promotions could boost engagement and sales in these underperforming areas.
 
-- The `NULL` region, which likely represents customers with missing or unspecified region information, generates the highest revenue with a total of `$750,149.53`.
-- `ID Region` follows with `$104,361.95` in total revenue.
-- Regions such as `SP`, `RJ`, and `NM` are also significant revenue generators, contributing over `$50,000` in revenue each.
-- Less prominent regions like `DF` and `MT` generate relatively low revenue, with totals under `$2,000`.
+#### 💥 *Impact Analysis:*
+- *Enhanced Regional Insights*: By updating missing region information, Northwind can achieve more accurate analyses and tailor region-specific initiatives, likely increasing revenue across targeted markets.
+- *Increased Revenue from Targeted Marketing*: By focusing efforts on high-revenue regions, Northwind may see a rise in revenue from its strongest markets, optimizing marketing ROI and strengthening customer relationships in these profitable areas.
+- *Growth in Underperforming Regions*: Targeted strategies for low-revenue regions could help boost sales and expand Northwind’s market reach. This approach may foster a more balanced revenue distribution across regions and uncover new growth opportunities.
 
-#### Recommendations
-
-1. **Improve Data Quality in the `Region` Field**: Since the `NULL` region generates the highest revenue, it’s crucial to investigate and update missing regional information. Standardizing this field will enable better geographic insights and more targeted strategies.
-
-2. **Focus Marketing Efforts on High-Revenue Regions**: Targeted marketing campaigns should prioritize regions with high revenue, such as `ID`, `SP`, and `RJ`. Tailoring promotions or special offers for these areas could further enhance revenue and customer loyalty.
-
-3. **Explore Growth Opportunities in Low-Revenue Regions**: Regions like `DF` and `MT` present opportunities for growth. Strategies like localized advertising, regional partnerships, or promotions could boost engagement and sales in these underperforming areas.
-
-#### Impact Analysis
-
-- **Enhanced Regional Insights**: By updating missing region information, Northwind can achieve more accurate analyses and tailor region-specific initiatives, likely increasing revenue across targeted markets.
-
-- **Increased Revenue from Targeted Marketing**: By focusing efforts on high-revenue regions, Northwind may see a rise in revenue from its strongest markets, optimizing marketing ROI and strengthening customer relationships in these profitable areas.
-
-- **Growth in Underperforming Regions**: Targeted strategies for low-revenue regions could help boost sales and expand Northwind’s market reach. This approach may foster a more balanced revenue distribution across regions and uncover new growth opportunities.
 
 This analysis highlights regions where Northwind should focus its marketing efforts to boost sales, particularly in areas with high revenue. It also identifies regions where further data validation might be needed, especially concerning the `NULL` region.
 
@@ -326,7 +319,7 @@ This analysis highlights regions where Northwind should focus its marketing effo
 #### Output Explanation:
 This query determines the top-selling product by revenue in each high-revenue region by joining the `Customers`, `Orders`, `Order Details`, and `Products` tables. The `WITH` clause calculates `TotalRevenue` for each product in each region by summing up the revenue generated (`UnitPrice * Quantity * (1 - Discount)`). Then, the outer query ranks products within each region by revenue, using `ROW_NUMBER()` to identify the top product in each region. Filtering on `RevenueRank = 1` ensures only the highest-revenue product in each region is displayed.
 
-#### Key Insights:
+#### 🌟Key Insights:
 - The product `"Côte de Blaye"` is a top seller in multiple regions `(e.g., WA, OR, RJ, and SP)`, indicating consistent demand across various regions.
 - `"Thüringer Rostbratwurst"` shows strong performance in multiple regions like `AK`, `Co. Cork`, and `MT`, suggesting its popularity in those areas.
 - Regions such as `Québec` and `OR` contribute significant revenue from high-demand items like `Côte de Blaye`, signaling potential markets for focused marketing or inventory investment.
@@ -334,22 +327,19 @@ This query determines the top-selling product by revenue in each high-revenue re
 - The `NULL` values in the `Region` column indicate missing regional data for some customer records. However, products sold to these `NULL` regions—such as "Côte de Blaye" with revenue of `$67,376.95` still contribute significantly to Northwind revenue. This data gap limits Northwind's ability to target marketing, optimize inventory, and perform regional analysis, as customers with incomplete location details cannot be reached for tailored promotions or efficient inventory allocation.
 
 
-#### Recommendations:
-1. **Increase Stock for High-Demand Products**: Prioritize inventory for products like `"Côte de Blaye"` and `"Thüringer Rostbratwurst"` that consistently perform well across multiple regions. This can prevent stockouts, reduce missed sales opportunities, and enhance customer satisfaction.
+#### 📌 *Recommendations:*
+- *Increase Stock for High-Demand Products*: Northwind needs to prioritize inventory for products like `"Côte de Blaye"` and `"Thüringer Rostbratwurst"` that consistently perform well across multiple regions. This will prevent stockouts, reduce missed sales opportunities, and enhance customer satisfaction.
+- *Implement Targeted Marketing Campaigns*: Northwind needs to tailor marketing strategies by region to focus on high-revenue products. For instance, campaigns in `Québec` and `OR` could emphasize `"Côte de Blaye"` promotions, while areas like `Isle of Wight` could focus on regional preferences like `Sirop d'érable`.
+- *Address Data Gaps*: The presence of `NULL` values in regional data suggests a need for data quality improvements. Ensuring that customer locations are accurately recorded will enable more refined regional analysis, better targeting, and precise inventory allocation. 
+- *Leverage Localized Product Preferences*: For regions with unique top-sellers, Northwind needs to consider localized merchandising or exclusive offers. By highlighting products that have strong regional popularity like `"Sirop d'érable"` in `Isle of Wight` Northwind can deepen customer loyalty and engagement in those areas.
+- *Consider Regional Expansion or Investment*: Based on revenue contributions from regions like `Québec`, `OR`, and `RJ`, Northwind could explore further market opportunities, such as increased distribution channels or partnerships in these areas.
 
-2. **Implement Targeted Marketing Campaigns**: Tailor marketing strategies by region to focus on high-revenue products. For instance, campaigns in `Québec` and `OR` could emphasize `"Côte de Blaye"` promotions, while areas like `Isle of Wight` could focus on regional preferences like `Sirop d'érable`.
+#### 💥 *Impact Analysis:*
+- *Revenue Growth*: By focusing on top products in high-revenue regions, Northwind can increase sales and maximize profitability, especially by preventing stockouts of in-demand items.
+- *Customer Engagement and Retention*: Targeted campaigns based on popular products in each region can enhance customer loyalty and engagement, as they feel their preferences are recognized and valued.
+- *Operational Efficiency*: Addressing data gaps will streamline inventory and marketing efforts, allowing Northwind to more effectively allocate resources and reduce waste from unsold stock.
+- *Strategic Market Insights*: Leveraging region-specific product preferences enables Northwind to identify potential areas for expansion, allowing for growth in high-performing regions and the opportunity to adjust to customer trends effectively.
 
-3. **Address Data Gaps**: The presence of `NULL` values in regional data suggests a need for data quality improvements. Ensuring that customer locations are accurately recorded will enable more refined regional analysis, better targeting, and precise inventory allocation. This can involve processes like mandatory data fields in customer records or data enrichment initiatives.
-
-4. **Leverage Localized Product Preferences**: For regions with unique top-sellers, consider localized merchandising or exclusive offers. Highlighting products that have strong regional popularity—like `"Sirop d'érable"` in `Isle of Wight`—can deepen customer loyalty and engagement in those areas.
-
-5. **Consider Regional Expansion or Investment**: Based on revenue contributions from regions like `Québec`, `OR`, and `RJ`, Northwind could explore further market opportunities, such as increased distribution channels or partnerships in these areas.
-
-#### Impact Analysis:
-- **Revenue Growth**: By focusing on top products in high-revenue regions, Northwind can increase sales and maximize profitability, especially by preventing stockouts of in-demand items.
-- **Customer Engagement and Retention**: Targeted campaigns based on popular products in each region can enhance customer loyalty and engagement, as they feel their preferences are recognized and valued.
-- **Operational Efficiency**: Addressing data gaps will streamline inventory and marketing efforts, allowing Northwind to more effectively allocate resources and reduce waste from unsold stock.
-- **Strategic Market Insights**: Leveraging region-specific product preferences enables Northwind to identify potential areas for expansion, allowing for growth in high-performing regions and the opportunity to adjust to customer trends effectively.
 
 By implementing these recommendations, Northwind can enhance revenue generation, improve customer satisfaction, and ensure efficient operations through data-driven decisions.
 
@@ -361,20 +351,20 @@ By implementing these recommendations, Northwind can enhance revenue generation,
 ![q10 image](./images/q10.png)
 
 #### Output Explanation:
-This query calculates the customer retention rate over a given period by analyzing the frequency of orders placed by each customer. It begins by creating a common table expression (`CustomerOrders`) that counts the total number of orders for each customer in the `Orders` table. Then, in the main query, it determines the percentage of customers who have placed more than one order (indicating retained customers) by dividing the count of such customers by the total number of customers, and formatting the result as a percentage.
+I used this query to calculate the customer retention rate over a given period by analyzing the frequency of orders placed by each customer. I began by creating a common table expression (`CustomerOrders`) that counts the total number of orders for each customer in the `Orders` table. I then used it in the main to determine the percentage of customers who have placed more than one order (indicating retained customers) by dividing the count of such customers by the total number of customers and finally formatting the result as a percentage.
 
-#### Key Insights:
-- The retention rate over the specified period is high, with `98.88%` of customers placing multiple orders.
-- A high retention rate indicates that Northwind has strong customer loyalty and repeat purchasing behavior, suggesting satisfaction with the products and services offered.
-- This insight could support efforts to enhance customer lifetime value by focusing on personalized promotions, loyalty programs, or incentives to maintain and further improve retention.
+#### 🌟Key Insights:
+- The customer retention rate is high, with `98.88%` of customers placing multiple orders.
+- The high retention rate indicates that Northwind has strong customer loyalty and repeat purchasing behavior. This may suggest satisfaction with the products, services offered and other factors.
+- This insight could be leveraged to enhance customer lifetime value by focusing on personalized promotions, loyalty programs, or incentives to maintain or further improve the retention rate.
 
-#### Recommendation:
-Implement a **Customer Loyalty Program** to incentivize repeat purchases and increase customer engagement.
+#### 📌Recommendation:
+Northwind should implement (if not already) or improve their **Customer Loyalty Program** to incentivize repeat purchases and increase customer engagement.
 
-#### Impact Analysis:
-- **Boost Customer Lifetime Value**: Rewards for frequent purchases can increase average revenue per customer.
-- **Enhance Brand Loyalty**: A loyalty program strengthens customer commitment and retention.
-- **Drive Revenue Growth**: Incentives for repeat purchases can increase order frequency and size.
+#### 💥Impact Analysis:
+- *Boost Customer Lifetime Value*: Rewards to customers for thier frequent purchases can increase average revenue per customer.
+- *Enhance Brand Loyalty*: A loyalty program strengthens customer commitment and retention.
+- *Drive Revenue Growth*: Incentives for repeat purchases can increase order frequency and size.
 
 ---
 
@@ -384,22 +374,22 @@ Implement a **Customer Loyalty Program** to incentivize repeat purchases and inc
 ![q11 image](./images/q11.png)
 
 #### Output Explanation:
-This query calculates the average processing time for each employee by first determining the processing time for each order (the difference between `OrderDate` and `ShippedDate`). It then aggregates this information to calculate the average processing time per employee. Finally, the results are sorted by `AvgProcessingTime`, providing a ranking of employees based on their efficiency in processing orders.
+I used this query to calculate the average processing time for each employee by first determining the processing time for each order (the difference between `OrderDate` and `ShippedDate`). I then aggregated this information to calculate the average processing time per employee. Finally, I sorted the results by `AvgProcessingTime`, which provided a ranking of employees based on their efficiency in processing orders.
 
-#### Key Insights:
-- **Nancy Davolio** and **Steven Buchanan** are the most efficient employees, with an average processing time of **7 days**.
-- **Andrew Fuller**, **Laura Callahan**, **Margaret Peacock**, **Janet Leverling**, **Robert King**, and **Michael Suyama** have an average processing time of **8 days**, which suggests that their order processing is slightly slower compared to Nancy and Steven.
-- **Anne Dodsworth** has the slowest processing time, with an average of **10 days**, indicating that there may be room for improvement in her order processing efficiency.
+#### 🌟Key Insights:
+- *Nancy Davolio* and *Steven Buchanan* are the most efficient employees, with an average processing time of `7`.
+- *Andrew Fuller*, *Laura Callahan*, *Margaret Peacock**, *Janet Leverling*, *Robert King*, and *Michael Suyama* have an average processing time of `8`, which suggests that their order processing is slightly slower compared to `Nancy` and `Steven`.
+- *Anne Dodsworth* has the slowest processing time, with an average of `10`. This indicates that there may be room for improvement in her order processing efficiency.
 
-#### Recommendations:
-1. **Training for Slow Processors**: Provide additional training to employees with slower processing times like `Anne Dodsworth` to help improve her efficiency.
-2. **Process Optimization**: Streamline order processing steps for employees with higher average times to reduce delays.
-3. **Performance Incentives**: Offer rewards or recognition for top performers like Nancy Davolio and Steven Buchanan to maintain high productivity levels.
+#### 📌Recommendations:
+- *Training for Slow Processors*: Provide additional training to employees with slower processing times like `Anne Dodsworth` to help improve her efficiency.
+- *Process Optimization*: Streamline order processing steps for employees with higher average times to reduce delays.
+- *Performance Incentives*: Offer rewards or recognition for top performers like `Nancy Davolio` and `Steven Buchanan` to maintain high productivity levels and encourage other employee to emulate.
 
-#### Impact Analysis:
-1. **Faster Order Fulfillment**: Improving processing times will result in quicker deliveries, leading to higher customer satisfaction.
-2. **Resource Allocation**: By identifying slower processors, resources can be allocated to provide targeted support, boosting overall efficiency.
-3. **Employee Morale**: Recognizing high performers and providing training for others will foster a positive work environment and encourage continuous improvement.
+#### 💥Impact Analysis:
+- *Faster Order Fulfillment*: Improving processing times will result in quicker deliveries, leading to higher customer satisfaction.
+- *Resource Allocation*: By identifying slower processors, resources can be allocated to provide targeted support, boosting overall efficiency.
+- *Employee Morale*: Recognizing high performers and providing training for others will foster a positive work environment and encourage continuous improvement.
 
 
 
