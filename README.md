@@ -378,7 +378,7 @@ Implement a **Customer Loyalty Program** to incentivize repeat purchases and inc
 
 ---
 
-#### Q11: How do employee productivity and customer satisfaction relate (based on order completeness and delivery time)?
+### Q11: How do employee productivity and customer satisfaction relate (based on order completeness and delivery time)?
 *Query and Output Screenshot:*
 
 ![q11 image](./images/q11.png)
