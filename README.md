@@ -152,7 +152,7 @@ Based on my analysis, below is a summary of the most significant findings I made
 | **Products**       | Products.SupplierID     | Suppliers        | Links each product to its supplier.                                   |
 | **Products**       | Products.CategoryID     | Categories       | Organizes products into categories.                                   |
 
-These discovered relationships will be the foundational tool for me to the Northwind database's structure and my guide to how tables interact for the various queries I will be using to answer the key business questions and bring the needed insights. This exploration step was neede as the main catalyst to an accurate and meaningful results in the overall project.
+These discovered relationships will be the foundational tool for me to the Northwind database's structure and my guide to how tables interact for the various queries I will be using to answer the key business questions and bring the needed insights. This exploration step was needed as the main catalyst to an accurate and meaningful results in the overall project.
 
 ---
 
