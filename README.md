@@ -219,7 +219,7 @@ I used this query to calculate the total revenue for each product category. I jo
 ![q3 image](./images/q3.png)
 
 ### Output Explanation:
-I used the query join `Products` and `OrderDetails` to calculate the total quantity sold for each product. By grouping by `ProductID` and `ProductName` and using `SUM(od.Quantity)`, I was able to get the total quantity sold for each product. Finaly, sorting by `TotalQuantitySold` in descending order `(DESC)` helped to highlight the most popular products.
+I used this query to join `Products` and `OrderDetails` to calculate the total quantity sold for each product. By grouping by `ProductID` and `ProductName` and using `SUM(od.Quantity)`, I was able to get the total quantity sold for each product. Finaly, sorting by `TotalQuantitySold` in descending order `(DESC)` helped to highlight the most popular products.
 
 ### 🌟Key Insights:
 - `Camembert Pierrot` and `Raclette Courdavault` are the top-selling products, with `1,577` and `1,496` units sold, respectively.
@@ -243,7 +243,7 @@ I used the query join `Products` and `OrderDetails` to calculate the total quant
 ![q4 image](./images/q4.png)
 
 ### Output Explanation:
-I used this query to join the `Employees` and `Orders` tables to count the total number of orders handled by each employee. By grouping by `EmployeeID`, `FirstName`, and `LastName` and using the `COUNT(o.OrderID)` function, the query calculates the number of orders assigned to each employee. Finally, I sorted by `OrdersHandled` in descending order `(DESC)` to allow the highlighting of the top-performing employees in terms of order volume.
+I used this query to join the `Employees` and `Orders` tables to count the total number of orders handled by each employee. By grouping by `EmployeeID`, `FirstName`, and `LastName` and using the `COUNT()` function on the 'orderID', the query calculates the number of orders assigned to each employee. Finally, I sorted by `OrdersHandled` in descending order `(DESC)` to allow the highlighting of the top-performing employees in terms of order volume.
 
 ### 🌟Key Insights:
 - `Margaret Peacock` is the top performer, handling a total of `156` orders.
