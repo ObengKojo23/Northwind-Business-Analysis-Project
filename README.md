@@ -121,7 +121,7 @@ In doing so `SSMS` automatically displays the foreign key relationships among ta
 
 ### 2.2.3 Detailed Examination of Individual Table Relationships:
 - ### Process:
-  I examined each table’s relationships in isolation using `sp_fkeys`. Using `sp_fkeys` on each table helped confirm how it references other tables or how it it is referenced by others.
+  I examined each table’s relationships in isolation using `sp_fkeys`. Using `sp_fkeys` on each table helped confirm how it references other tables or how it is referenced by others.
 
 Example just for the Orders Table. Note that this was done for all the tables.
 
