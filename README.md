@@ -175,7 +175,7 @@ I used this query to count the number of orders each customer has placed. I then
 - Other notable customers include `Folk och fä HB` and `Hungry Owl All-Night Grocers`. Each of them have `19` orders, which indicates consistency in their demand as well.
 
 ### 📌Recommendations:
-- **Implement a Loyalty Program**: Northwind shoild offer discounts or benefits for their high-order customers like `Save-a-lot Markets` and `Ernst Handel` to cement their loyalty.
+- **Implement a Loyalty Program**: Northwind should offer discounts or benefits for their high-order customers like `Save-a-lot Markets` and `Ernst Handel` to cement their loyalty.
 - **Targeted Marketing Campaigns**: Northwind should create personalized campaigns for top customers to encourage more frequent purchases.
 - **Dedicated Account Management**: Northwind should assign account managers to top customers to strengthen relationships and for ease in addressing their specific needs.
 
