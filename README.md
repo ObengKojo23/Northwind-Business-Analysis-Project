@@ -319,7 +319,7 @@ This query joins `Orders`, `Customers`, and `Order Details` to calculate the tot
 This analysis highlights regions where Northwind should focus its marketing efforts to boost sales, particularly in areas with high revenue. It also identifies regions where further data validation might be needed, especially concerning the `NULL` region.
 
 ### Q9: What are the top products in each high-revenue region?
-**Query and Output Screenshot:**
+*Query and Output Screenshot:*
 
 ![q9 image](./images/q9.png)
 
@@ -352,5 +352,55 @@ This query determines the top-selling product by revenue in each high-revenue re
 - **Strategic Market Insights**: Leveraging region-specific product preferences enables Northwind to identify potential areas for expansion, allowing for growth in high-performing regions and the opportunity to adjust to customer trends effectively.
 
 By implementing these recommendations, Northwind can enhance revenue generation, improve customer satisfaction, and ensure efficient operations through data-driven decisions.
+
+---
+
+### Q10: What is the customer retention rate over a given period?
+*Query and Output Screenshot:*
+
+![q10 image](./images/q10.png)
+
+#### Output Explanation:
+This query calculates the customer retention rate over a given period by analyzing the frequency of orders placed by each customer. It begins by creating a common table expression (`CustomerOrders`) that counts the total number of orders for each customer in the `Orders` table. Then, in the main query, it determines the percentage of customers who have placed more than one order (indicating retained customers) by dividing the count of such customers by the total number of customers, and formatting the result as a percentage.
+
+#### Key Insights:
+- The retention rate over the specified period is high, with `98.88%` of customers placing multiple orders.
+- A high retention rate indicates that Northwind has strong customer loyalty and repeat purchasing behavior, suggesting satisfaction with the products and services offered.
+- This insight could support efforts to enhance customer lifetime value by focusing on personalized promotions, loyalty programs, or incentives to maintain and further improve retention.
+
+#### Recommendation:
+Implement a **Customer Loyalty Program** to incentivize repeat purchases and increase customer engagement.
+
+#### Impact Analysis:
+- **Boost Customer Lifetime Value**: Rewards for frequent purchases can increase average revenue per customer.
+- **Enhance Brand Loyalty**: A loyalty program strengthens customer commitment and retention.
+- **Drive Revenue Growth**: Incentives for repeat purchases can increase order frequency and size.
+
+---
+
+#### Q11: How do employee productivity and customer satisfaction relate (based on order completeness and delivery time)?
+*Query and Output Screenshot:*
+
+![q11 image](./images/q11.png)
+
+#### Output Explanation:
+This query calculates the average processing time for each employee by first determining the processing time for each order (the difference between `OrderDate` and `ShippedDate`). It then aggregates this information to calculate the average processing time per employee. Finally, the results are sorted by `AvgProcessingTime`, providing a ranking of employees based on their efficiency in processing orders.
+
+#### Key Insights:
+- **Nancy Davolio** and **Steven Buchanan** are the most efficient employees, with an average processing time of **7 days**.
+- **Andrew Fuller**, **Laura Callahan**, **Margaret Peacock**, **Janet Leverling**, **Robert King**, and **Michael Suyama** have an average processing time of **8 days**, which suggests that their order processing is slightly slower compared to Nancy and Steven.
+- **Anne Dodsworth** has the slowest processing time, with an average of **10 days**, indicating that there may be room for improvement in her order processing efficiency.
+
+#### Recommendations:
+1. **Training for Slow Processors**: Provide additional training to employees with slower processing times like `Anne Dodsworth` to help improve her efficiency.
+2. **Process Optimization**: Streamline order processing steps for employees with higher average times to reduce delays.
+3. **Performance Incentives**: Offer rewards or recognition for top performers like Nancy Davolio and Steven Buchanan to maintain high productivity levels.
+
+#### Impact Analysis:
+1. **Faster Order Fulfillment**: Improving processing times will result in quicker deliveries, leading to higher customer satisfaction.
+2. **Resource Allocation**: By identifying slower processors, resources can be allocated to provide targeted support, boosting overall efficiency.
+3. **Employee Morale**: Recognizing high performers and providing training for others will foster a positive work environment and encourage continuous improvement.
+
+
 
 
