@@ -21,7 +21,6 @@ WHERE TABLE_NAME = 'Employees';
 
 
 
-
 -- Explore Foreign Key Constraints Using SQL Queries:
 SELECT 
     tc.TABLE_NAME AS ChildTable,
@@ -37,10 +36,8 @@ WHERE tc.CONSTRAINT_TYPE = 'FOREIGN KEY';
 
 
 
-
 -- Detailed Examination of Individual Table Relationships:
 EXEC sp_fkeys @pktable_name = 'Orders';
-
 
 
 
@@ -114,14 +111,12 @@ FROM OrderDiscountAnalysis;
 
 
 
-
 -- Percentage of orders include a discount, and how it impacts overall revenue
 SELECT 
     CONCAT(FORMAT(ROUND(SUM(CASE WHEN [Order Details].Discount > 0 THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 2), '0.##'), '%') AS DiscountedOrdersPercent,
     ROUND(SUM([Order Details].UnitPrice * [Order Details].Quantity * (1 - [Order Details].Discount)), 2) AS DiscountedRevenue,
     ROUND(SUM([Order Details].UnitPrice * [Order Details].Quantity), 2) AS TotalRevenue
 FROM [Order Details];
-
 
 
 
@@ -139,8 +134,6 @@ GROUP BY
     c.Region
 ORDER BY 
     TotalRevenue DESC;
-
-
 
 
 
@@ -181,7 +174,6 @@ ORDER BY
 
 
 
-
 -- The customer retention rate over a given period
 WITH CustomerOrders AS (
     SELECT CustomerID, COUNT(OrderID) AS OrdersCount
@@ -191,8 +183,6 @@ WITH CustomerOrders AS (
 SELECT 
     CONCAT(FORMAT(COUNT(CASE WHEN OrdersCount > 1 THEN 1 END) * 100.0 / COUNT(*), '0.##'), '%') AS RetentionRatePercent
 FROM CustomerOrders;
-
-
 
 
 
