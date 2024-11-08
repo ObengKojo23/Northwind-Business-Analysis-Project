@@ -194,7 +194,7 @@ I used this query to count the number of orders each customer has placed. I then
 ![q2 image](./images/q2.png)
 
 ### Output Explanation:
-I used this query to calculate the total revenue for each product category. I then joined the `Categories`, `Products`, and `Order Details` tables. I selected the `CategoryName` and calculated the total revenue by multiplying `UnitPrice`, `Quantity`, and applying the discount. I then rounded the results to two decimal places using the `ROUND()` function. I finally grouped the results by `CategoryName` and sorted in descending order of total revenue to show the categories with the highest revenue first.
+I used this query to calculate the total revenue for each product category. I joined the `Categories`, `Products`, and `Order Details` tables. I selected the `CategoryName` and calculated the total revenue by multiplying `UnitPrice`, `Quantity`, and applying the discount. I then rounded the results to two decimal places using the `ROUND()` function. I finally grouped the results by `CategoryName` and sorted in descending order of total revenue to show the categories with the highest revenue first.
 
 ### 🌟Key Insights:
 - `Beverages` and `Dairy Products` are the top revenue-generating categories for Northwind. Recording `$267,868.18` and `$234,507.29`, respectively.
