@@ -84,16 +84,19 @@ Understanding the relationships that exists among all tables in the database is 
 For this purpose, I used the following approaches:
 
 ### 2.2.1 Database Diagramming in SQL Server Management Studio (SSMS):
-### Process: I created a new database diagram within SSMS and added key tables like `Customers`, `Orders`, `OrderDetails`, `Products`, `Suppliers`, `Employees`, `Shippers`, and `Categories`.
+- ### Process:
+  I created a new database diagram within SSMS and added key tables like `Customers`, `Orders`, `OrderDetails`, `Products`, `Suppliers`, `Employees`, `Shippers`, and `Categories`.
 In doing so `SSMS` automatically displays the foreign key relationships among tables and helped me to visualize representation of the table structure.
 
 *Query and Output Screenshot.*
 ![](./images/explore2.1.png)
 
-### Outcome: The diagram helped to revealed key relationships among table. For example; `orders` linked to `customers`, `order details` is tied to `orders` and `products`). This gave a big-picture view of the data structure and query approach.
+- ### Outcome:
+  The diagram helped to revealed key relationships among table. For example; `orders` linked to `customers`, `order details` is tied to `orders` and `products`). This gave a big-picture view of the data structure and query approach.
 
 ### 2.2.2 Exploring Foreign Key Constraints Using SQL Queries:
-### Process: I used SQL queries to examine foreign key constraints directly. This provided details on child-parent table connections. This was helpful for confirming which fields link tables and informed me on how to approach my joint queries.
+- ### Process:
+  I used SQL queries to examine foreign key constraints directly. This provided details on child-parent table connections. This was helpful for confirming which fields link tables and informed me on how to approach my joint queries.
 
 *Query and Output Screenshot.*
 ![](./images/explore2.2.png)
@@ -109,27 +112,32 @@ In doing so `SSMS` automatically displays the foreign key relationships among ta
 - **WHERE Clause**:
    - Filters results to show only foreign key constraints. this allows enforces only relationships between tables to be displayed.
 
-### Outcome: This query help provide the list of all relationships where one table (`the child`) references another table (`the parent`) via foreign key constraints. This help to give a clear map of dependencies within the database. A typical example is:
+- ### Outcome:
+  This query help provide the list of all relationships where one table (`the child`) references another table (`the parent`) via foreign key constraints. This help to give a clear map of dependencies within the database. A typical example is:
 - `Orders.CustomerID` references `Customers.CustomerID`. This indicated a link between `customers` and their respective `orders`.
 - `OrderDetails.OrderID` references `Orders.OrderID`. This also shows the connection between `order details` to `specific orders`.
 
 ### 2.2.3 Detailed Examination of Individual Table Relationships:
-### Process: I examined each table’s relationships in isolation using `sp_fkeys`. Using `sp_fkeys` on each table helped confirm how it references other tables or how it it is referenced by others.
+- ### Process:
+  I examined each table’s relationships in isolation using `sp_fkeys`. Using `sp_fkeys` on each table helped confirm how it references other tables or how it it is referenced by others.
 
 Example just for the Orders Table. Note that this was done for all the tables.
 
 *Query and Output Screenshot.*
 ![](./images/explore2.3.png)
 
-### Outcome: Using this permitted me to see all references to the Orders table and also helped me to understand the dependencies and connections unique to each table.
+- ### Outcome:
+  Using this permitted me to see all references to the Orders table and also helped me to understand the dependencies and connections unique to each table.
 
 ### 2.2.4 Exploring Key Constraints in the Object Explorer:
-### Process: Finally I used the Object Explorer to further explore the Keys section under each table by right-clicking on each foreign key to view its `dependencies`.
+- ### Process:
+  Finally I used the Object Explorer to further explore the Keys section under each table by right-clicking on each foreign key to view its `dependencies`.
 
 *Screenshot for the orders table dependencies.*
 ![](./images/explore2.4.png)
 
-### Outcome: This helped in viewing the relationships on a table-by-table basis and aided the confirmation of connections discovered in all the early approaches.
+- ### Outcome:
+  This helped in viewing the relationships on a table-by-table basis and aided the confirmation of connections discovered in all the early approaches.
 
 ### Key Table Relationships Findings
 Based on my analysis, below is a summary of the most significant findings I made with the Northwind Database.
