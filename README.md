@@ -129,23 +129,23 @@ These discovered relationships will be the foundational tool for me to the North
 ![q1 image](./images/q1.png)
 
 #### Output Explanation:
-The query counts the number of orders each customer has placed. It then joins the `Customers` table with the `Orders` table on `CustomerID`, selects the `CustomerID` and `CompanyName`, and uses `COUNT()` to get the total orders. The results are grouped by `CustomerID` and `CompanyName` and sorted by the order count in descending order, showing customers with the most orders first.
+I used this query to count the number of orders each customer has placed. I then joined the `Customers` table with the `Orders` table on `CustomerID`, and selected the `CustomerID` and `CompanyName`, and used `COUNT()` to get the total orders. I grouped the results by `CustomerID` and `CompanyName` and sorted by the order count in descending order, showing customers with the most orders first.
 
 #### 🌟Key Insights:
 - `Save-a-lot Markets` has placed the most orders, with `31` total orders, followed closely by `Ernst Handel` with `30` orders.
 - `QUICK-Stop` ranks third with `28` orders, highlighting a strong purchasing relationship with Northwind.
-- Other notable customers include `Folk och fä HB` and `Hungry Owl All-Night Grocers`, each with `19` orders, showing consistent demand.
-- This analysis reveals key customers like `Save-a-lot Markets` and `Ernst Handel`, who are high-value accounts. Northwind could use this insight to consider offering loyalty programs or targeted marketing to further nurture these relationships and encourage repeat business with this customers.
+- Other notable customers include `Folk och fä HB` and `Hungry Owl All-Night Grocers`. Each of them have `19` orders, which indicates consistency in their demand as well.
 
 #### 📌Recommendations:
-- **Implement a Loyalty Program**: Offer discounts or benefits for high-order customers like `Save-a-lot Markets` and `Ernst Handel` to enhance loyalty.
-- **Targeted Marketing Campaigns**: Create personalized campaigns for top customers to encourage more frequent purchases.
-- **Dedicated Account Management**: Assign account managers to top customers to strengthen relationships and address specific needs.
+- *Implement a Loyalty Program*: Northwind shoild offer discounts or benefits for their high-order customers like `Save-a-lot Markets` and `Ernst Handel` to cement their loyalty.
+- *Targeted Marketing Campaigns*: Northwind should create personalized campaigns for top customers to encourage more frequent purchases.
+- **Dedicated Account Management*: Northwind should assign account managers to top customers to strengthen relationships and for ease in addressing their specific needs.
 
 #### 💥Impact Analysis:
-- **Increased Customer Retention**: A loyalty program can improve customer retention rates and revenue stability from key accounts.
-- **Higher Sales Volume**: Targeted campaigns could increase order frequency, resulting in higher overall sales.
-- **Enhanced Customer Satisfaction**: Dedicated account management fosters strong customer relationships, potentially leading to increased brand loyalty and positive referrals.
+- *Increased Customer Retention*: Implemetation of a loyalty program can improve customer retention rates and revenue stability from key accounts.
+- *Enhanced Customer Satisfaction*: Dedicating special account managements foster strong customer relationships and potentially leads to increased brand loyalty and positive referrals.
+- *Higher Sales Volume*: Adopting targeted campaigns could increase order frequency and result in higher overall sales for Northwind.
+
 
 ---
 
@@ -156,22 +156,21 @@ The query counts the number of orders each customer has placed. It then joins th
 ![q2 image](./images/q2.png)
 
 #### Output Explanation:
-This query calculates the total revenue for each product category. It joins the `Categories`, `Products`, and `Order Details` tables. It selects the `CategoryName` and calculates the total revenue by multiplying `UnitPrice`, `Quantity`, and applying the discount. The result is then rounded to two decimal places using the `ROUND()`. The results are grouped by `CategoryName` and sorted in descending order of total revenue, showing categories with the highest revenue first.
+I used this query to calculate the total revenue for each product category. I then joined the `Categories`, `Products`, and `Order Details` tables. I selected the `CategoryName` and calculated the total revenue by multiplying `UnitPrice`, `Quantity`, and applying the discount. I then rounded the results to two decimal places using the `ROUND()` function. I finally grouped the results by `CategoryName` and sorted in descending order of total revenue to show the categories with the highest revenue first.
 
 #### 🌟Key Insights:
-- `Beverages` and `Dairy Products` are the top revenue-generating categories, with `$267,868.18` and `$234,507.29`, respectively.
-- `Confections` and `Meat/Poultry` follow closely, highlighting their importance to Northwind's revenue.
-- This analysis provides insights into the revenue performance of each category. By analyzing the revenue per category, It will help Northwind to be able to prioritize and optimize inventory, marketing, and sales strategies for the most profitable product categories.
+- `Beverages` and `Dairy Products` are the top revenue-generating categories for Northwind. Recording `$267,868.18` and `$234,507.29`, respectively.
+- `Confections` and `Meat/Poultry` follow closely. This also highlights their importance to Northwind's total revenue.
 
 #### 📌Recommendations
-- **Increase Stock for High-Demand Categories**: Ensure sufficient inventory for top categories like `Beverages` and `Dairy Products` to prevent stockouts and support demand.
-- **Targeted Marketing Campaigns**: Run promotions for high-revenue categories to further boost sales, while also creating campaigns to increase visibility for lower-revenue categories.
-- **Optimize Pricing Strategy**: Analyze the pricing and discount strategies for low-performing categories to make them more competitive and attractive.
+- *Increase Stock for High-Demand Categories*: Northwind need to ensure sufficient inventory for top categories like `Beverages` and `Dairy Products` to prevent stockouts and support demand.
+- *Targeted Marketing Campaigns*: Northwind needs to run promotions for high-revenue categories to further boost sales. They need to also focus on creating campaigns to increase visibility for lower-revenue categories like `Condiments`, `Produce` and `Grains/Cereals` .
+- *Optimize Pricing Strategy*: Northwind may want to analyze the pricing and discount strategies for all the low-performing categories to make them more competitive and attractive.
 
 #### 💥Impact Analysis
-- **Enhanced Revenue Growth**: Prioritizing top categories could significantly boost overall revenue, aligning with customer demand.
-- **Improved Customer Satisfaction**: By ensuring availability of popular items, Northwind can improve customer satisfaction and retention.
-- **Optimized Resource Allocation**: Focusing resources on profitable categories can improve efficiency in inventory management, marketing, and sales investments.
+- *Enhanced Revenue Growth*: Manangement decision to prioritize top categories could significantly boost overall revenue and help align with customer demand.
+- *Improved Customer Satisfaction*: By always ensuring availability of popular items, Northwind can improve customer satisfaction and retention.
+- *Optimized Resource Allocation*: Ability to focus more resources on profitable categories can improve efficiency in inventory management, marketing, and sales investments.
 
 --- 
 
@@ -298,12 +297,12 @@ I used this query  to join `Orders`, `Customers`, and `Order Details` to calcula
 - Regions such as `SP`, `RJ`, and `NM` are also significant revenue generatoring areas as they contribute over `$50,000` in revenue each.
 - Less prominent regions like `DF` and `MT` generate relatively low revenue, with totals revenues under `$2,000`.
 
-#### 📌 *Recommendations:*
+#### 📌 Recommendations:
 - *Improve Data Quality in the `Region` Field*: Since the `NULL` region generates the highest revenue, it’s crucial for Northwind to investigate and update missing regional information. Standardizing this field will enable better geographic insights and more targeted strategies.
 - *Focus Marketing Efforts on High-Revenue Regions*: Targeted marketing campaigns should prioritize regions with high revenue, such as `ID`, `SP`, and `RJ`. Ability to tailor a promotion or special sales offers for these areas could further enhance revenue and customer loyalty.
 - *Explore Growth Opportunities in Low-Revenue Regions*: Regions like `DF` and `MT` present opportunities for growth. Strategies like localized advertising, regional partnerships, or promotions could boost engagement and sales in these underperforming areas.
 
-#### 💥 *Impact Analysis:*
+#### 💥 Impact Analysis:
 - *Enhanced Regional Insights*: By updating missing region information, Northwind can achieve more accurate analyses and tailor region-specific initiatives, likely increasing revenue across targeted markets.
 - *Increased Revenue from Targeted Marketing*: By focusing efforts on high-revenue regions, Northwind may see a rise in revenue from its strongest markets, optimizing marketing ROI and strengthening customer relationships in these profitable areas.
 - *Growth in Underperforming Regions*: Targeted strategies for low-revenue regions could help boost sales and expand Northwind’s market reach. This approach may foster a more balanced revenue distribution across regions and uncover new growth opportunities.
@@ -327,14 +326,14 @@ This query determines the top-selling product by revenue in each high-revenue re
 - The `NULL` values in the `Region` column indicate missing regional data for some customer records. However, products sold to these `NULL` regions—such as "Côte de Blaye" with revenue of `$67,376.95` still contribute significantly to Northwind revenue. This data gap limits Northwind's ability to target marketing, optimize inventory, and perform regional analysis, as customers with incomplete location details cannot be reached for tailored promotions or efficient inventory allocation.
 
 
-#### 📌 *Recommendations:*
+#### 📌 Recommendations:
 - *Increase Stock for High-Demand Products*: Northwind needs to prioritize inventory for products like `"Côte de Blaye"` and `"Thüringer Rostbratwurst"` that consistently perform well across multiple regions. This will prevent stockouts, reduce missed sales opportunities, and enhance customer satisfaction.
 - *Implement Targeted Marketing Campaigns*: Northwind needs to tailor marketing strategies by region to focus on high-revenue products. For instance, campaigns in `Québec` and `OR` could emphasize `"Côte de Blaye"` promotions, while areas like `Isle of Wight` could focus on regional preferences like `Sirop d'érable`.
 - *Address Data Gaps*: The presence of `NULL` values in regional data suggests a need for data quality improvements. Ensuring that customer locations are accurately recorded will enable more refined regional analysis, better targeting, and precise inventory allocation. 
 - *Leverage Localized Product Preferences*: For regions with unique top-sellers, Northwind needs to consider localized merchandising or exclusive offers. By highlighting products that have strong regional popularity like `"Sirop d'érable"` in `Isle of Wight` Northwind can deepen customer loyalty and engagement in those areas.
 - *Consider Regional Expansion or Investment*: Based on revenue contributions from regions like `Québec`, `OR`, and `RJ`, Northwind could explore further market opportunities, such as increased distribution channels or partnerships in these areas.
 
-#### 💥 *Impact Analysis:*
+#### 💥 Impact Analysis:
 - *Revenue Growth*: By focusing on top products in high-revenue regions, Northwind can increase sales and maximize profitability, especially by preventing stockouts of in-demand items.
 - *Customer Engagement and Retention*: Targeted campaigns based on popular products in each region can enhance customer loyalty and engagement, as they feel their preferences are recognized and valued.
 - *Operational Efficiency*: Addressing data gaps will streamline inventory and marketing efforts, allowing Northwind to more effectively allocate resources and reduce waste from unsold stock.
