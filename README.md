@@ -251,6 +251,31 @@ I used this query to calculate the total sales for each month by joining the `Or
 - **Optimized Marketing Strategy**: Seasonal insights enable data-driven campaigns, increasing customer engagement and potentially boosting sales in lower-demand months.
 
 ---
+### Q6: How do discounts affect the order frequency and quantity of purchased products❔
+*Query and Output Screenshot:*
+
+![q6 image](./images/q6.png)
+
+#### Output Explanation:
+I used this query to categorize orders into two types based on whether a discount was applied or not. I used a `CASE` statement to label orders as either "Discounted" or "Non-Discounted." I then aggregated data to count the number of distinct orders (`OrderCount`), calculate the total quantity of products ordered (`TotalQuantity`), and found the average quantity per order (`AvgQuantity`). By grouping the results based on the discount type, the analysis compared the behavior of discounted versus non-discounted orders.
+
+#### 🌟Key Insights:
+- **Discounted Orders**: There were `380` orders with a discount, with a total quantity of `22,718` products purchased and an average of `27` units per order.  
+- **Non-Discounted Orders**: There were `613` orders without discounts, with a total of `28,599` products purchased and an average of `21` units per order.  
+- **Impact of Discounts**: Orders with discounts have a *lower frequency* (`380` orders) compared to non-discounted orders (`613` orders). However, discounted orders have a **higher average quantity** of products per order (`27` units) compared to non-discounted orders (`21` units).
+  - The total quantity for discounted orders is only slightly lower (`22,718` vs `28,599`), but this is offset by fewer orders in the discounted category.
+
+#### 📌Recommendations:
+- **Increase Frequency of Discount Offers**: Northwind needs to increase the number of discounted orders by offering more frequent or targeted promotions. By expanding the reach of discount offers, Northwind can boost the overall order count, maintaining higher order volume and sales.
+- **Bundle Products for Larger Purchases**: Northwind needs to implement product bundles where discounts apply only when certain quantities are purchased. This would encourage customers to buy larger quantities per order, similar to the trend seen in the analysis of discounted orders.
+- **Personalized Discount Campaigns**: Northwind needs to utilize customer data to offer personalized discounts based on purchase history. Targeting high-value customers with tailored discounts can further increase the average quantity per order while enhancing customer loyalty.
+
+#### 💥Impact Analysis:
+- **Revenue Impact**: Increasing the frequency of discounts could lead to higher overall sales volume. Although the frequency of discounted orders is currently lower, promoting more discount-driven purchases will likely increase both revenue and total order quantity.
+- **Customer Retention and Loyalty**: Personalized discount campaigns can improve customer retention by incentivizing repeat purchases. This will create a sense of loyalty, as customers feel valued with special offers tailored to their buying behavior.
+- **Inventory Management**: By bundling products and offering discounts based on larger quantities, Northwind can better manage stock levels. This strategy will reduce overstocking or stockouts by aligning customer demand with inventory needs, improving supply chain efficiency.
+
+---
 
 ### Q7: What percentage of orders include a discount, and how does it impact overall revenue❔
 *Query and Output Screenshot:*
