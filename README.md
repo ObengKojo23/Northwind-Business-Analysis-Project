@@ -15,17 +15,17 @@
 ---
 
  <a id="one"></a>
-# **1. Introduction**
+# **🌍 1. Introduction**
 <a href=#cont>Back to Project Structure</a>
 
-## 📝 1.1 Database Overview
+## 1.1 Database Overview 📝 
 The Northwind database is a database provided by `Microsoft` that models a fictional company called Northwind Traders. This fictious company imports and exports specialty foods from all around the world. The database is organized around typical sales and supply chain data, making it useful for an ideal project that showcase how to handle common business scenarios.
 It includes information about orders, customers, suppliers, products, employees, and shippers.
  
-## 🔑 1.2 Objective
+## 1.2 Objective 🔑 
 To analyze Northwind Traders' business data and gain actionable insights in areas such as customer behavior, sales trends, product performance, and employee productivity using SQL in SSMS.
 
-## 🛠 1.3 Tools and Technologies Used
+## 1.3 Tools and Technologies Used 🛠
 
 - **SQL Server Management Studio (SSMS)** – My primary tool for writing and executing all SQL queries, managing database schemas, and visualizing table relationships.
 - **SQL** – The core language I used for data extraction, transformation, analysis, and aggregation within the database.
@@ -37,7 +37,7 @@ To analyze Northwind Traders' business data and gain actionable insights in area
 - **Markdown** – I used Markdown for project documentation, including README files, to enhance clarity and structure in my final reports.
 
 
-## 🧠 1.4 Skills Employed
+## 1.4 Skills Employed 🧠 
 
 - **SQL Querying and Optimization** – Developed efficient SQL queries for data retrieval, filtering, and aggregation, using commands such as `SELECT`, `JOIN`, `GROUP BY`, and `ORDER BY`.
 - **Data Aggregation and Transformation** – Applied SQL functions like `SUM()`, `COUNT()`, `AVG()`, and `DATEDIFF()` for data summarization and analysis.
@@ -69,7 +69,7 @@ You can download SQL Server Management Studio (SSMS) from the official Microsoft
 ---
 
  <a id="two"></a>
-# **2. Data Exploration and Preparation**
+# **📊 2. Data Exploration and Preparation**
 <a href=#cont>Back to Project Structure</a>
 
 ## 2.1 Exploring the Database Structure. 👀 
@@ -155,7 +155,7 @@ These discovered relationships will be the foundational tool for me to the North
 ---
 
  <a id="three"></a>
-# **3. Business Questions and Analysis**
+# **❓ 3. Business Questions and Analysis**
 <a href=#cont>Back to Project Structure</a>
 
 ## Q1: Which customers have placed the most orders❔
