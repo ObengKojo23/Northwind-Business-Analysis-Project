@@ -4,13 +4,13 @@
 
 ## **Project Structure**
 
-<a href=#one>Introduction</a>
+<a href=#one>1. Introduction</a>
 
-<a href=#two>Data Exploration and Preparation</a>
+<a href=#two>2. Data Exploration and Preparation</a>
 
-<a href=#three>Business Questions and Analysis</a>
+<a href=#three>3. Business Questions and Analysis</a>
 
-<a href=#four>Conclusion</a>
+<a href=#four>4. Conclusion</a>
 
 ---
 
