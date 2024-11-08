@@ -100,7 +100,7 @@ Using this permitted me to see all references to the Orders table and also helpe
 Finally I used the Object Explorer to further explore the Keys section under each table by right-clicking on each foreign key to view its `dependencies`.
 
 *Screenshot for the orders table dependencies.*
-![](./images/explore2.3.png)
+![](./images/explore2.4.png)
 
 #### Outcome:
 This helped in viewing the relationships on a table-by-table basis and aided the confirmation of connections discovered in all the early approaches.
