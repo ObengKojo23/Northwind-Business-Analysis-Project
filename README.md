@@ -39,45 +39,34 @@ To analyze Northwind Traders' business data and gain actionable insights in area
 
 
 ## 👀 1. Exploring the Database Structure
-Before starting, I will first examine the main tables within the database using DESCRIBE in SQL server. Doing this will allow me to get a better understanding of each table's structure: The tables to investigate includes; Customers, Employees, Orders, OrderDetails, Products, Suppliers, and Categories Tables.
+My first approach for a clear understanding of the Northwind Database was to investigate the table schema including the individual column names, data types, maximum length for the text based columns, and finally constraints on each column. This was useful in allowing me to get a better understanding of each table's structure.  Tables like `Customers`, `Employees`, `Orders`, `OrderDetails`, `Products`, `Suppliers`, and `Categories` tables were explored using this method.
+
+*Query and Output Screenshot.*
+![](./images/explore1.png)
 
 ## 👀 2. Exploring Table Relationships in the Northwind Database
-Understanding the relationships that exists among all tables in the database is key to performing accurate and insightful analyses. This section of my prpject sseks to further explore and documents these relationships to serve as my foundational knowledge for all subsequent queries and business questions I will be answering with this database.
-For the purpose, I used the following approaches:
+Understanding the relationships that exists among all tables in the database is key to performing accurate and insightful analyses. In this section, I further explored and documented the relationships that exist among all tables. This served as a foundational knowledge for how I approached all business questions and subsequent queries in the Northwind Database.
+
+For this purpose, I used the following approaches:
 
 ### 2.1 Database Diagramming in SQL Server Management Studio (SSMS):
-- `Process:`
-  
-I created a new database diagram within SSMS and added key tables: Customers, Orders, OrderDetails, Products, Suppliers, Employees, Shippers, and Categories.
+#### Process: 
+I created a new database diagram within SSMS and added key tables like `Customers`, `Orders`, `OrderDetails`, `Products`, `Suppliers`, `Employees`, `Shippers`, and `Categories`.
 In doing so `SSMS` automatically displays the foreign key relationships among tables and helped me to visualize representation of the table structure.
 
-**Outcome:**
+*Query and Output Screenshot.*
+![](./images/explore2.1.png)
 
-The diagram revealed key relationships (e.g., orders linked to customers, order details tied to orders and products), giving a big-picture view of the data structure.
-
-A screenshot of the database diagram I created.
-![Database diagram](./images/database_diagramming.png)
+#### Outcome:
+The diagram helped to revealed key relationships among table. For example; `orders` linked to `customers`, `order details` is tied to `orders` and `products`). This gave a big-picture view of the data structure and query approach.
 
 ### 2.2 Exploring Foreign Key Constraints Using SQL Queries:
-I used SQL queries to examine foreign key constraints directly. This provided details on child-parent table connections. This was helpful for confirming which fields link tables.
+I used SQL queries to examine foreign key constraints directly. This provided details on child-parent table connections. This was helpful for confirming which fields link tables and informed me on how to approach my joint queries.
 
-A screenshot of the query and output.
-![fk constraints](./images/database_diagramming.png)
-```sql
-SELECT 
-    tc.TABLE_NAME AS ChildTable,
-    kcu.COLUMN_NAME AS ChildColumn,
-    ccu.TABLE_NAME AS ParentTable,
-    ccu.COLUMN_NAME AS ParentColumn
-FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS AS tc
-JOIN INFORMATION_SCHEMA.KEY_COLUMN_USAGE AS kcu
-    ON tc.CONSTRAINT_NAME = kcu.CONSTRAINT_NAME
-JOIN INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE AS ccu
-    ON ccu.CONSTRAINT_NAME = tc.CONSTRAINT_NAME
-WHERE tc.CONSTRAINT_TYPE = 'FOREIGN KEY';
-```
-**Query breakdown:**
+*Query and Output Screenshot.*
+![](./images/explore2.2.png)
 
+#### Query breakdown:
 - **SELECT Clause**:
    - `ChildTable`: Displays the name of the table containing the foreign key (referred to as the "child" table).
    - `ChildColumn`: Shows the specific column in the child table that acts as the foreign key.
@@ -86,38 +75,35 @@ WHERE tc.CONSTRAINT_TYPE = 'FOREIGN KEY';
 - **JOIN Statements**:
    - The query joins `INFORMATION_SCHEMA.TABLE_CONSTRAINTS` with `INFORMATION_SCHEMA.KEY_COLUMN_USAGE` and `INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE` to access foreign key constraints and their associated columns.
 - **WHERE Clause**:
-   - Filters results to show only foreign key constraints, so only relationships between tables are displayed.
+   - Filters results to show only foreign key constraints. this allows enforces only relationships between tables to be displayed.
 
-**Outcome**: 
-
-This query provides a list of relationships where one table (child) references another table (parent) via foreign key constraints, giving a clear map of dependencies within the database. For example:
-
-- `Orders.CustomerID` references `Customers.CustomerID`, indicating a link between customers and their respective orders.
-- `OrderDetails.OrderID` references `Orders.OrderID`, connecting order details to specific orders.
+#### Outcome: 
+This query help provide the list of all relationships where one table (`the child`) references another table (`the parent`) via foreign key constraints. This help to give a clear map of dependencies within the database. A typical example is:
+- `Orders.CustomerID` references `Customers.CustomerID`. This indicated a link between `customers` and their respective `orders`.
+- `OrderDetails.OrderID` references `Orders.OrderID`. This also shows the connection between `order details` to `specific orders`.
 
 ### 2.3 Detailed Examination of Individual Table Relationships:
-I also examined each table’s relationships in isolation using the `sp_fkeys`. Using `sp_fkeys` on each table helped confirm which tables reference each or are referenced by each.
+I examined each table’s relationships in isolation using `sp_fkeys`. Using `sp_fkeys` on each table helped confirm how it references other tables or how it it is referenced by others.
 
-Example for for just the Orders Table. Note that this was done for all the tables.
+Example just for the Orders Table. Note that this was done for all the tables.
 
-Query: A screenshot of the query and output.
-![sp_fkeys](./images/sp_fkeys.png)
-```sql
-EXEC sp_fkeys @pktable_name = 'Orders';
-```
-**Outcome:**
+*Query and Output Screenshot.*
+![](./images/explore2.3.png)
+
+#### Outcome:
 Using this permitted me to see all references to the Orders table and also helped me to understand the dependencies and connections unique to each table.
 
 ### 2.4 Exploring Key Constraints in the Object Explorer:
-Finally I used the Object Explorer to further explore the Keys section under each table by right-clicking on each foreign key to view its dependencies.
+Finally I used the Object Explorer to further explore the Keys section under each table by right-clicking on each foreign key to view its `dependencies`.
 
-**Outcome:**
+*Screenshot for the orders table dependencies.*
+![](./images/explore2.3.png)
 
-This helped in viewing the relationships on a table-by-table basis, therefore being able to confirm connections discovered in the above steps.
+#### Outcome:
+This helped in viewing the relationships on a table-by-table basis and aided the confirmation of connections discovered in all the early approaches.
 
-## Key Findigs after Investigating Table Relationships
-
-Below is a summary of the most significant findings I made with the Northwind Database.
+### Key Table Relationships Findings
+Based on my analysis, below is a summary of the most significant findings I made with the Northwind Database.
 
 | **Child Table**    | **Foreign Key**         | **Parent Table** | **Relationship Description**                                           |
 |--------------------|-------------------------|------------------|-----------------------------------------------------------------------|
@@ -127,7 +113,7 @@ Below is a summary of the most significant findings I made with the Northwind Da
 | **Products**       | Products.SupplierID     | Suppliers        | Links each product to its supplier.                                   |
 | **Products**       | Products.CategoryID     | Categories       | Organizes products into categories.                                   |
 
-These discovered relationships will be the foundational tool for me to the Northwind database's structure and my guide to how tables interact for the various queries I will be using later to answer the key business questions and bring the needed insights. This exploration step was vital to ensuring an accurate and meaningful results in the overall project.
+These discovered relationships will be the foundational tool for me to the Northwind database's structure and my guide to how tables interact for the various queries I will be using to answer the key business questions and bring the needed insights. This exploration step was neede as the main catalyst to an accurate and meaningful results in the overall project.
 
 ---
 
