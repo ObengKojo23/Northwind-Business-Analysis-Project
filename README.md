@@ -66,7 +66,7 @@ You can download SQL Server Management Studio (SSMS) from the official Microsoft
 
 3. Launch SSMS application and follow along to achieve similar outcome.
    
-5. You can also access the [click here](./problem_statement_&_sql/all_sql) to download the problem statemnet file, or [click here](./problem_statement_&_sql/Project_Statement(NorthwindTraders).docx) to download all a file that contains all the sql queries I used for this project.
+5. You can [click here](./problem_statement_&_sql/all_sql) to download the problem statement file, or [click here](./problem_statement_&_sql/Project_Statement(NorthwindTraders).docx) to download all a file that contains all the sql queries I used for this project.
 
 ---
 
