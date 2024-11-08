@@ -137,14 +137,14 @@ I used this query to count the number of orders each customer has placed. I then
 - Other notable customers include `Folk och fä HB` and `Hungry Owl All-Night Grocers`. Each of them have `19` orders, which indicates consistency in their demand as well.
 
 #### 📌Recommendations:
-- *Implement a Loyalty Program*: Northwind shoild offer discounts or benefits for their high-order customers like `Save-a-lot Markets` and `Ernst Handel` to cement their loyalty.
-- *Targeted Marketing Campaigns*: Northwind should create personalized campaigns for top customers to encourage more frequent purchases.
-- **Dedicated Account Management*: Northwind should assign account managers to top customers to strengthen relationships and for ease in addressing their specific needs.
+- **Implement a Loyalty Program**: Northwind shoild offer discounts or benefits for their high-order customers like `Save-a-lot Markets` and `Ernst Handel` to cement their loyalty.
+- **Targeted Marketing Campaigns**: Northwind should create personalized campaigns for top customers to encourage more frequent purchases.
+- **Dedicated Account Management**: Northwind should assign account managers to top customers to strengthen relationships and for ease in addressing their specific needs.
 
 #### 💥Impact Analysis:
-- *Increased Customer Retention*: Implemetation of a loyalty program can improve customer retention rates and revenue stability from key accounts.
-- *Enhanced Customer Satisfaction*: Dedicating special account managements foster strong customer relationships and potentially leads to increased brand loyalty and positive referrals.
-- *Higher Sales Volume*: Adopting targeted campaigns could increase order frequency and result in higher overall sales for Northwind.
+- **Increased Customer Retention**: Implemetation of a loyalty program can improve customer retention rates and revenue stability from key accounts.
+- **Enhanced Customer Satisfaction**: Dedicating special account managements foster strong customer relationships and potentially leads to increased brand loyalty and positive referrals.
+- **Higher Sales Volume**: Adopting targeted campaigns could increase order frequency and result in higher overall sales for Northwind.
 
 
 ---
@@ -163,14 +163,14 @@ I used this query to calculate the total revenue for each product category. I th
 - `Confections` and `Meat/Poultry` follow closely. This also highlights their importance to Northwind's total revenue.
 
 #### 📌Recommendations
-- *Increase Stock for High-Demand Categories*: Northwind need to ensure sufficient inventory for top categories like `Beverages` and `Dairy Products` to prevent stockouts and support demand.
-- *Targeted Marketing Campaigns*: Northwind needs to run promotions for high-revenue categories to further boost sales. They need to also focus on creating campaigns to increase visibility for lower-revenue categories like `Condiments`, `Produce` and `Grains/Cereals` .
-- *Optimize Pricing Strategy*: Northwind may want to analyze the pricing and discount strategies for all the low-performing categories to make them more competitive and attractive.
+- **Increase Stock for High-Demand Categories**: Northwind need to ensure sufficient inventory for top categories like `Beverages` and `Dairy Products` to prevent stockouts and support demand.
+- **Targeted Marketing Campaigns**: Northwind needs to run promotions for high-revenue categories to further boost sales. They need to also focus on creating campaigns to increase visibility for lower-revenue categories like `Condiments`, `Produce` and `Grains/Cereals` .
+- **Optimize Pricing Strategy**: Northwind may want to analyze the pricing and discount strategies for all the low-performing categories to make them more competitive and attractive.
 
 #### 💥Impact Analysis
-- *Enhanced Revenue Growth*: Manangement decision to prioritize top categories could significantly boost overall revenue and help align with customer demand.
-- *Improved Customer Satisfaction*: By always ensuring availability of popular items, Northwind can improve customer satisfaction and retention.
-- *Optimized Resource Allocation*: Ability to focus more resources on profitable categories can improve efficiency in inventory management, marketing, and sales investments.
+- **Enhanced Revenue Growth**: Manangement decision to prioritize top categories could significantly boost overall revenue and help align with customer demand.
+- **Improved Customer Satisfaction**: By always ensuring availability of popular items, Northwind can improve customer satisfaction and retention.
+- **Optimized Resource Allocation**: Ability to focus more resources on profitable categories can improve efficiency in inventory management, marketing, and sales investments.
 
 --- 
 
@@ -181,17 +181,16 @@ I used this query to calculate the total revenue for each product category. I th
 ![q3 image](./images/q3.png)
 
 #### Output Explanation:
-This query joins `Products` and `OrderDetails` to calculate the total quantity sold for each product. By grouping by `ProductID` and `ProductName` and using `SUM(od.Quantity)`, I was able to get the total quantity sold for each product. Finaly, sorting by `TotalQuantitySold` in descending order `(DESC)` helps to highlights the most popular products.
+I used the query join `Products` and `OrderDetails` to calculate the total quantity sold for each product. By grouping by `ProductID` and `ProductName` and using `SUM(od.Quantity)`, I was able to get the total quantity sold for each product. Finaly, sorting by `TotalQuantitySold` in descending order `(DESC)` helped to highlight the most popular products.
 
 #### 🌟Key Insights:
 - `Camembert Pierrot` and `Raclette Courdavault` are the top-selling products, with `1,577` and `1,496` units sold, respectively.
 - `Gorgonzola Telino` and `Gnocchi di nonna Alice` are also in high demand, with over `1,200` units sold each.
-- This analysis will help Northwind to prioritize their stock for high-demand products, prioritize marketing, and create targeted promotions and sales strategies around these best-seller.
 
 #### 📌Recommendations:
-- **Stock Prioritization**: Ensure high-demand products like `Camembert Pierrot` and `Raclette Courdavault` are well-stocked to meet demand.
-- **Targeted Marketing**: Focus promotions on top-selling products to boost sales and attract more customers to popular items.
-- **Supplier Relationships**: Strengthen partnerships with suppliers of high-demand products to secure better pricing and stable inventory levels.
+- **Stock Prioritization**: Northwind needs to ensure that high-demand products like `Camembert Pierrot` and `Raclette Courdavault` are well-stocked to meet demand at all times.
+- **Targeted Marketing**: Northwind needs to focus promotions on top-selling products to boost sales and attract more customers to popular items.
+- **Supplier Relationships**: Northwind needs to strengthen partnerships with suppliers of high-demand products to secure better pricing and constant stable inventory levels.
 
 #### 💥Impact Analysis:
 - **Reduced Stockouts**: Prioritizing stock for popular items reduces the risk of stockouts, improving customer satisfaction and retention.
@@ -206,24 +205,23 @@ This query joins `Products` and `OrderDetails` to calculate the total quantity s
 ![q4 image](./images/q4.png)
 
 #### Output Explanation:
-This query joins the `Employees` and `Orders` tables to count the total number of orders handled by each employee. By grouping by `EmployeeID`, `FirstName`, and `LastName` and using the `COUNT(o.OrderID)` function, the query calculates the number of orders assigned to each employee. Finally, sorting by `OrdersHandled` in descending order `(DESC)` allows us to highlight the top-performing employees in terms of order volume.
+I used this query to join the `Employees` and `Orders` tables to count the total number of orders handled by each employee. By grouping by `EmployeeID`, `FirstName`, and `LastName` and using the `COUNT(o.OrderID)` function, the query calculates the number of orders assigned to each employee. Finally, I sorted by `OrdersHandled` in descending order `(DESC)` to allow the highlighting of the top-performing employees in terms of order volume.
 
 #### 🌟Key Insights:
 - `Margaret Peacock` is the top performer, handling a total of `156` orders.
 - `Janet Leverling` and `Nancy Davolio` follow closely with `127` and `123` orders, respectively.
 - Employees like `Andrew Fuller`, `Laura Callahan`, and `Robert King` have handled over `90` orders, showing a strong performance.
 - The bottom performers in this list, `Steven Buchanan` and `Anne Dodsworth`, handled fewer than `50` orders each, indicating areas where performance improvement may be needed.
-- This analysis will help Northwind identify top performers and may influence decisions on staffing, promotions, and resource allocation to support order fulfillment and customer satisfaction.
 
 #### 📌Recommendations
-- **Reward Top Performers**: Recognize and incentivize high-performing employees like `Margaret Peacock`, `Janet Leverling`, `Nancy Davolio` and others to maintain morale and productivity.
-- **Training for Low Performers**: Provide additional training and support to employees with lower order volumes, such as Steven Buchanan and Anne Dodsworth, to boost their productivity.
-- **Balanced Workload**: Redistribute order assignments to balance workloads and prevent burnout among top-performing employees, enhancing overall efficiency.
+- **Reward Top Performers**: Northwind should recognize and incentivize high-performing employees like `Margaret Peacock`, `Janet Leverling`, `Nancy Davolio` and others to maintain their morale and productivity while encouraging others to do more.
+- **Training for Low Performers**: Northwind needs to provide additional training and support to employees with lower order volumes, such as `Steven Buchanan` and `Anne Dodsworth`, to help boost their productivity level.
+- **Balanced Workload**: Northwind should redistribute order assignments to balance workloads and prevent burnout among top-performing employees. This will enhance employees overall efficiency.
 
 #### 💥Impact Analysis
 - **Increased Productivity**: Rewarding top performers and providing support to lower performers can drive productivity across the team.
-- **Improved Employee Retention**: Recognizing and supporting employees fosters a positive work environment, potentially reducing turnover.
-- **Enhanced Customer Satisfaction**: A balanced workload and efficient staff can lead to quicker order handling, improving customer satisfaction and loyalty.
+- **Improved Employee Retention**: Recognizing and supporting employees fosters a positive work environment and potentially reduces turnover.
+- **Enhanced Customer Satisfaction**: A balanced workload and efficient staff can lead to quicker order handling which will lead to an improved customer satisfaction and loyalty.
 
 ---
 
@@ -233,20 +231,19 @@ This query joins the `Employees` and `Orders` tables to count the total number o
 ![q5 image](./images/q5.png)
 
 #### Output Explanation:
-This query calculates the total sales for each month by joining the `Orders` and `OrderDetails` tables. By using `YEAR(OrderDate)` and `MONTH(OrderDate)`, the data is grouped by year and month. The `SUM(od.UnitPrice * od.Quantity * (1 - od.Discount))` expression calculates the total sales, factoring in product prices, quantities, and any discounts applied. Sorting the result by year and month ensures that the sales trend is displayed chronologically.
+I used this query to calculate the total sales for each month by joining the `Orders` and `OrderDetails` tables. By using `YEAR(OrderDate)` and `MONTH(OrderDate)`, I grouped the data by year and month. The `SUM(od.UnitPrice * od.Quantity * (1 - od.Discount))` expression calculates the total sales, factoring in product prices, quantities, and any discounts applied. Sorting the result by year and month ensured that the sales trend was displayed chronologically.
 
 #### 🌟Key Insights:
-- `Sales Growth`: Over the years, there is a noticeable increase in monthly sales, especially in 1997 and 1998.
+- **Sales Growth**: There is a noticeable increase in monthly sales over the years in Northwind.  Specifically in 1997 and 1998.
 - In `1996`, sales started relatively low but saw significant growth in the latter months, with December reaching over `$45,000` in total sales.
 - `1997` showed consistent sales growth, with peak months like `October` and `December`, which generated over  `$67,000` and `$71,000` in monthly sales, respectively.
 - `1998` continued the trend, with `April` seeing the highest sales value of over `$123,000`.
-- `Sales Fluctuations`: Some months, such as `May 1998`, show lower sales compared to others, indicating seasonal fluctuations that could be explored further (e.g., impact of holidays or economic factors).
-- `Business Implications`: These trends provide key insights into high and low sales periods, helping to optimize inventory, manage cash flow, and plan marketing campaigns. The high sales months, particularly towards the end of the year, could indicate seasonal demand, while lower sales months could require targeted promotions or new product launches.
+- **Sales Fluctuations**: Some months, such as `May 1998`, show lower sales compared to others, indicating seasonal fluctuations that could be explored further (maybe impact of holidays or other economic factors).
 
 #### 📌Recommendations:
-- **Increase Inventory for Peak Months**: Boost stock levels before high-sales months like October and December to meet demand and avoid stockouts.
-- **Seasonal Promotions**: Launch promotions in low-sales months, such as May, to boost revenue during slower periods.
-- **Analyze High-Growth Periods**: Study factors driving high sales in April and December for strategies to replicate this growth in other months.
+- **Increase Inventory for Peak Months**: Northwind needs to boost stock levels before high-sales months like `October` and `December` to meet demand and avoid stockouts.
+- **Seasonal Promotions**: Northwind needs to launch promotions in low-sales months, such as `May`, to boost revenue during slower periods.
+- **Analyze High-Growth Periods**: Northwind needs to study other factors driving high sales in `April` and `December` for strategies to replicate this growth in other months.
 
 #### 💥Impact Analysis:
 - **Improved Revenue**: Adequate inventory and targeted promotions can capture higher sales, especially during peak months, maximizing revenue.
@@ -261,20 +258,17 @@ This query calculates the total sales for each month by joining the `Orders` and
 ![q7 image](./images/q7.png)
 
 #### Output Explanation:
-This query calculates two key metrics: the percentage of orders that include a discount and the overall impact of those discounts on the revenue. It works by first counting the number of orders in the `OrderDetails` table where the `Discount` is greater than 0 and dividing it by the total number of orders, multiplying by 100 to get the percentage of orders with discounts. The query also calculates the total revenue from orders that included a discount (**DiscountedRevenue**) and compares it with the total revenue from all orders (**TotalRevenue**).
+I usde this query to calculate two key metrics: 1. the percentage of orders that include a discount and 2. the overall impact of those discounts on the revenue. It works by first counting the number of orders in the `OrderDetails` table where the `Discount` is greater than 0 and dividing it by the total number of orders. Multiplying by 100 returned the percentage of orders with discounts. The query also calculated the total revenue from orders that included a discount (**DiscountedRevenue**) and compares it with the total revenue from all orders (**TotalRevenue**).
 
 #### 🌟Key Insights:
 - `38.89%` of the orders in the dataset included a discount.
-- The `discounted revenue` amounts to `$1,265,793.04`, while the `total revenue` from all orders is `$1,354,458.59`.
-- This means that `discounted orders contributed to approximately 93.44%` of the total revenue, indicating a significant impact of discounts on overall sales.
-- The results highlight that while fewer orders received discounts, those that did make up a large portion of the revenue, suggesting that discounting is a powerful tool for driving higher-value sales.
-
-This analysis can help Northwind evaluate the effectiveness of their discount strategies, focusing on optimizing discount programs for higher revenue generation without negatively impacting profitability.
+- The `discounted revenue` amounts to `$1,265,793.04`, while the `total revenue` from all orders is `$1,354,458.59`. This means that `discounted orders` contributed to approximately `93.44%` of the total revenue. This is an indication of a significant impact of discounts on overall sales.
+- The results highlight that while fewer orders received discounts, these orders ended up making up a large portion of the revenue. This suggests that discounting is a powerful tool for driving higher-value sales.
 
 #### 📌Recommendations:
-- **Optimize Discount Thresholds**: Increase minimum purchase requirements for discounts to maintain revenue while reducing potential profit loss.
-- **Targeted Discounting**: Offer discounts on high-margin products or underperforming items to maximize revenue without over-discounting popular products.
-- **Seasonal Promotions**: Implement discounts during peak seasons to boost sales volume, focusing on product categories that benefit most from discount incentives.
+- **Optimize Discount Thresholds**: Northwind needs to increase minimum purchase requirements for discounts to maintain revenue while reducing potential profit loss.
+- **Targeted Discounting**: Northwind needs to offer discounts on high-margin products or underperforming items to maximize revenue without over-discounting popular products.
+- **Seasonal Promotions**: Northwind needs to implement discounts during peak seasons to boost sales volume and focus on product categories that benefit most from discount incentives.
 
 #### 💥Impact Analysis:
 - **Revenue Boost**: Discounts account for a significant portion (93.44%) of total revenue, indicating their power in driving sales volume.
