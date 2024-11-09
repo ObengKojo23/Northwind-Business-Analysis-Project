@@ -27,32 +27,28 @@ To analyze Northwind Traders' business data and gain actionable insights in area
 
 ## 1.3 Tools and Technologies Used 🛠
 
-- **SQL Server Management Studio (SSMS)** – My primary tool for writing and executing all SQL queries, managing database schemas, and visualizing table relationships.
-- **SQL** – The core language I used for data extraction, transformation, analysis, and aggregation within the database.
+- **SQL Server Management Studio (SSMS)** – The primary tool used for writing and executing SQL queries, and managing database schemas.
+- **SQL** – The core language Used for data extraction, transformation, analysis, and aggregation within the database.
 - **Microsoft SQL Server** – The database management system where I stored, queried, and maintained the Northwind database.
-- **Database Diagram Tool (SSMS)** – I used this tool to create visual representations of database relationships, which helped me understand table structures and foreign key dependencies.
-- **JOIN Operations** – Essential SQL techniques I employed to combine data across related tables, enabling multi-dimensional analysis.
-- **Information Schema Views** – I leveraged these views to programmatically access metadata about table constraints and keys, which supported my exploration of table relationships.
-- **Git/GitHub** – I used GitHub as my version control tool to manage and document my project documentation changes and sharing of findings.
-- **Markdown** – I used Markdown for project documentation, including README files, to enhance clarity and structure in my final reports.
+- **Database Diagram Tool (SSMS):** Used to create visual representations of database relationships and view foreign key dependencies.
+- **Information Schema Views:** leveraged to access metadata about table constraints and keys and general table relationships.
+- **Git/GitHub:** Used as my version control tool to manage and document my project documentation changes and sharing of findings.
+- **Markdown:**I used Markdown for project documentation, including README files, to enhance clarity and structure for this final report.
 
 
 ## 1.4 Skills Employed 🧠 
 
-- **SQL Querying and Optimization** – Developed efficient SQL queries for data retrieval, filtering, and aggregation, using commands such as `SELECT`, `JOIN`, `GROUP BY`, and `ORDER BY`.
-- **Data Aggregation and Transformation** – Applied SQL functions like `SUM()`, `COUNT()`, `AVG()`, and `DATEDIFF()` for data summarization and analysis.
-- **Advanced SQL Techniques**: Employed window functions, Common Table Expressions (CTEs), subqueries, and `CASE` statements for complex analyses.
-- **Common Table Expressions (CTEs)** – Utilized CTEs for breaking down complex queries into modular, readable components.
-- **Data Validation and Integrity Checks** – Ensured data quality by filtering for completed records and validating relationships across joined tables.
-- **Relational Database Management** – Analyzed table relationships, including many-to-many and one-to-many connections, to accurately link and aggregate data.
-- **Employee Productivity Analysis** – Calculated metrics like order processing times to assess individual employee performance and productivity.
-- **Customer Segmentation** – Performed customer analysis by segmenting based on order frequency, revenue contribution, and purchase behavior.
-- **Product Performance Analysis** – Identified top-selling products through aggregated sales data, aiding in stock prioritization and marketing.
-- **Time-Series Analysis** – Conducted trend analysis over time (e.g., monthly or quarterly sales trends) to identify patterns and inform business decisions.
-- **Data Integrity with Primary and Foreign Keys** – Structured queries based on database keys to maintain data integrity across relationships.
-- **Database Exploration in SSMS** – Used SQL Server Management Studio tools (e.g., Object Explorer and database diagrams) for relationship mapping and data structure understanding.
-- **Business Intelligence and Insights** – Extracted actionable business insights on customer behavior, employee performance, and sales trends from raw data.
-- **Project Documentation** – Documented all analysis steps, queries, and findings to ensure reproducibility and clarity in project deliverables.
+- **SQL Querying, Optimization, Data Aggregation and Transformation:** Developed efficient SQL queries for data retrieval, filtering, aggregation, summerizing, and analyzing using commands such as `SELECT`, `JOIN`, `GROUP BY`, `ORDER BY`, `SUM()`, `COUNT()`, `AVG()`, and `DATEDIFF()`.
+- **Advanced SQL Techniques:** Employed window functions, Common Table Expressions (CTEs), subqueries, and `CASE` statements.
+- **Data Validation and Integrity Checks:** Ensured data quality by filtering and validating relationships across joined tables.
+- **Relational Database Management:** Analyzed table relationships, including many-to-many and one-to-many connections.
+- **Employee Productivity Analysis:** Calculated metrics like to assess individual employee performance and productivity.
+- **Customer Segmentation:** Segmented order frequency, revenue contributions, and purchase behaviors in customer analysis.
+- **Product Performance Analysis:** Identified top-selling products through aggregated sales data, aiding in stocking.
+- **Time-Series Analysis:** Conducted trend analysis over time to identify patterns and inform business decisions.
+- **Data Integrity with Primary and Foreign Keys** – Structured queries based on database keys to maintain data integrity.
+- **Business Intelligence:** Extracted actionable business insights on customer behavior, employee performance, and sales.
+- **Project Documentation:** Documented all analysis steps, queries, and findings to ensure reproducibility and clarity.
 
 ## 1.5 How to Run This Project 🚀 
 
@@ -66,7 +62,7 @@ You can download SQL Server Management Studio (SSMS) from the official Microsoft
 
 3. Launch SSMS application and follow along to achieve similar outcome.
    
-5. You can [click here](./problem_statement_&_sql/Project_Statement(NorthwindTraders).docx) to download the problem statement file, or [click here](./problem_statement_&_sql/all_sql.sql) to download all a file that contains all the sql queries I used for this project.
+5. You can [click here](./problem_statement_&_sql/Project_Statement(NorthwindTraders).docx) to download the problem statement file, or [click here](./problem_statement_&_sql/all_sql.sql) to download the sql file that contains all the sql queries I used for this project.
 
 ---
 
@@ -75,7 +71,7 @@ You can download SQL Server Management Studio (SSMS) from the official Microsoft
 <a href=#cont>Back to Project Structure</a>
 
 ## 2.1 Exploring the Database Structure. 👀 
-My first approach for a clear understanding of the Northwind Database was to investigate the table schema including the individual column names, data types, maximum length for the text based columns, and finally constraints on each column. This was useful in allowing me to get a better understanding of each table's structure.  Tables like `Customers`, `Employees`, `Orders`, `OrderDetails`, `Products`, `Suppliers`, and `Categories` tables were explored using this method.
+My first approach for a clearer picture and understanding of the Northwind Database was to investigate the table schema including the individual column names, data types, maximum length for the text based columns, and finally constraints on each column. This was useful in allowing me to get a better view of each table's structure.  Tables like `Customers`, `Employees`, `Orders`, `OrderDetails`, `Products`, `Suppliers`, and `Categories` tables were explored using this method.
 
 *Query and Output Screenshot.*
 ![](./images/explore1.png)
@@ -272,16 +268,16 @@ I used this query to join the `Employees` and `Orders` tables to count the total
 I used this query to calculate the total sales for each month by joining the `Orders` and `OrderDetails` tables. By using `YEAR(OrderDate)` and `MONTH(OrderDate)`, I grouped the data by year and month. The `SUM(od.UnitPrice * od.Quantity * (1 - od.Discount))` expression calculates the total sales, factoring in product prices, quantities, and any discounts applied. Sorting the result by year and month ensured that the sales trend was displayed chronologically.
 
 ### 🌟Key Insights:
-- **Sales Growth**: There is a noticeable increase in monthly sales over the years in Northwind.  Specifically in 1997 and 1998.
-- In `1996`, sales started relatively low but saw significant growth in the latter months, with December reaching over `$45,000` in total sales.
-- `1997` showed consistent sales growth, with peak months like `October` and `December`, which generated over  `$67,000` and `$71,000` in monthly sales, respectively.
-- `1998` continued the trend, with `April` seeing the highest sales value of over `$123,000`.
-- **Sales Fluctuations**: Some months, such as `May 1998`, show lower sales compared to others, indicating seasonal fluctuations that could be explored further (maybe impact of holidays or other economic factors).
+- **Sales Growth**: There is a noticeable increase in monthly sales over the years in Northwind.  Specifically in `1997` and `1998`.
+- In `1996`, Northwind's sales started relatively low but saw significant growth in the latter months, with December reaching over `$45,000` in total sales.
+- The year `1997` showed consistent sales growth, with peak months like `October` and `December`, which generated over  `$67,000` and `$71,000` in monthly sales, respectively.
+- The year `1998` continued this growth trend, with `April` recording the highest sales value of over `$123,000`.
+- **Sales Fluctuations**: Some months, such as `May 1998`, show lower sales compared to others. This indicates seasonal fluctuations that could be explored further (maybe impact of holidays or other economic factors).
 
 ### 📌Recommendations:
-- **Increase Inventory for Peak Months**: Northwind needs to boost stock levels before high-sales months like `October` and `December` to meet demand and avoid stockouts.
+- **Increase Inventory for Peak Months**: Northwind needs to boost stock levels before high-sales months like `October` and `December` to meet demand and avoid stockouts and customer dissatisfaction.
 - **Seasonal Promotions**: Northwind needs to launch promotions in low-sales months, such as `May`, to boost revenue during slower periods.
-- **Analyze High-Growth Periods**: Northwind needs to study other factors driving high sales in `April` and `December` for strategies to replicate this growth in other months.
+- **Analyze High-Growth Periods**: Northwind needs to study other factors that may be driving higher sales in `April` and `December` for strategies to replicate this growth in other months.
 
 ### 💥Impact Analysis:
 - **Improved Revenue**: Adequate inventory and targeted promotions can capture higher sales, especially during peak months, maximizing revenue.
@@ -300,7 +296,7 @@ I used this query to categorize orders into two types based on whether a discoun
 ### 🌟Key Insights:
 - **Discounted Orders**: There were `380` orders with a discount, with a total quantity of `22,718` products purchased and an average of `27` units per order.  
 - **Non-Discounted Orders**: There were `613` orders without discounts, with a total of `28,599` products purchased and an average of `21` units per order.  
-- **Impact of Discounts**: Orders with discounts have a *lower frequency* (`380` orders) compared to non-discounted orders (`613` orders). However, discounted orders have a **higher average quantity** of products per order (`27` units) compared to non-discounted orders (`21` units).
+- **Impact of Discounts**: Orders with discounts have a *lower frequency* (`380` orders) compared to non-discounted orders (`613` orders). However, discounted orders have a *higher average quantity* of products per order (`27` units) compared to non-discounted orders (`21` units).
   - The total quantity for discounted orders is only slightly lower (`22,718` vs `28,599`), but this is offset by fewer orders in the discounted category.
 
 ### 📌Recommendations:
@@ -321,12 +317,12 @@ I used this query to categorize orders into two types based on whether a discoun
 ![q7 image](./images/q7.png)
 
 ### Output Explanation:
-I usde this query to calculate two key metrics: 1. the percentage of orders that include a discount and 2. the overall impact of those discounts on the revenue. It works by first counting the number of orders in the `OrderDetails` table where the `Discount` is greater than 0 and dividing it by the total number of orders. Multiplying by 100 returned the percentage of orders with discounts. The query also calculated the total revenue from orders that included a discount (**DiscountedRevenue**) and compares it with the total revenue from all orders (**TotalRevenue**).
+I used this query to calculate two key metrics: `1`. The percentage of orders that include a discount and `2`. The overall impact of those discounts on the revenue. I first counted the number of orders in the `OrderDetails` table where the `Discount` is greater than 0 and divided it by the total number of orders. Multiplying by 100 returned the percentage of orders with discounts. I also calculated the total revenue from orders that included a discount (*DiscountedRevenue*) and compared it with the total revenue from all orders (*TotalRevenue*).
 
 ### 🌟Key Insights:
-- `38.89%` of the orders in the dataset included a discount.
+- It was observed that `38.89%` of the orders in the sales dataset included a discount.
 - The `discounted revenue` amounts to `$1,265,793.04`, while the `total revenue` from all orders is `$1,354,458.59`. This means that `discounted orders` contributed to approximately `93.44%` of the total revenue. This is an indication of a significant impact of discounts on overall sales.
-- The results highlight that while fewer orders received discounts, these orders ended up making up a large portion of the revenue. This suggests that discounting is a powerful tool for driving higher-value sales.
+- The results highlight that while fewer orders received discounts, these orders ended up making up the largest portion of the sales revenue. This suggests that discounting is a powerful tool for driving higher-value sales.
 
 ### 📌Recommendations:
 - **Optimize Discount Thresholds**: Northwind needs to increase minimum purchase requirements for discounts to maintain revenue while reducing potential profit loss.
@@ -346,13 +342,13 @@ I usde this query to calculate two key metrics: 1. the percentage of orders that
 ![q8 image](./images/q8.png)
 
 ### Output Explanation:
-I used this query  to join `Orders`, `Customers`, and `Order Details` to calculate the total revenue generated by each region. By grouping the results by `Region` and using the formula `SUM(od.UnitPrice * od.Quantity * (1 - od.Discount))`, I computed the total revenue per region. The results was then sorted by `TotalRevenue` in descending order `(DESC)` to highlight the regions that generate the highest revenue.
+I used this query  to join `Orders`, `Customers`, and `Order Details` to calculate the total revenue generated by each region. By grouping the results by `Region` and using the formula `SUM(od.UnitPrice * od.Quantity * (1 - od.Discount))`, I computed the total revenue per region. The results was then sorted by `TotalRevenue` in descending order `(DESC)` to highlight the regions that generated the highest revenue.
 
 ### 🌟Key Insights:
-- The `NULL` region, which I presume represents customers with missing or unspecified region information happens to generate the highest revenue with a total of `$750,149.53`.
+- The **NULL** region, which I presume represents customers with missing or unspecified region information happens to generate the highest revenue with a total of `$750,149.53`.
 - **ID Region** follows with `$104,361.95` in total revenue.
-- Regions such as `SP`, `RJ`, and `NM` are also significant revenue generatoring areas as they contribute over `$50,000` in revenue each.
-- Less prominent regions like `DF` and `MT` generate relatively low revenue, with totals revenues under `$2,000`.
+- Regions such as **SP**, **RJ**, and **NM** are also significant revenue generatoring areas as they contribute over `$50,000` in revenue each.
+- Less prominent regions like **DF** and **MT** generate relatively low revenue, with totals revenues under `$2,000`.
 
 ### 📌 Recommendations:
 - **Improve Data Quality in the `Region` Field**: Since the `NULL` region generates the highest revenue, it’s crucial for Northwind to investigate and update missing regional information. Standardizing this field will enable better geographic insights and more targeted strategies.
@@ -372,7 +368,7 @@ I used this query  to join `Orders`, `Customers`, and `Order Details` to calcula
 ![q9 image](./images/q9.png)
 
 ### Output Explanation:
-This query determines the top-selling product by revenue in each high-revenue region by joining the `Customers`, `Orders`, `Order Details`, and `Products` tables. The `WITH` clause calculates `TotalRevenue` for each product in each region by summing up the revenue generated (`UnitPrice * Quantity * (1 - Discount)`). Then, the outer query ranks products within each region by revenue, using `ROW_NUMBER()` to identify the top product in each region. Filtering on `RevenueRank = 1` ensures only the highest-revenue product in each region is displayed.
+I used this query to determine the top-selling product by revenue in each high-revenue region by joining the `Customers`, `Orders`, `Order Details`, and `Products` tables. The `WITH` clause calculates `TotalRevenue` for each product in each region by summing up the revenue generated (`UnitPrice * Quantity * (1 - Discount)`). I then used the outer query to rank products within each region by revenue, using `ROW_NUMBER()` to identify the top product in each region. Filtering on `RevenueRank = 1` ensured that only the highest-revenue product in each region is displayed.
 
 ### 🌟Key Insights:
 - The product `"Côte de Blaye"` is a top seller in multiple regions `(e.g., WA, OR, RJ, and SP)`, indicating consistent demand across various regions.
@@ -458,5 +454,8 @@ In this project, I used the Northwind database to analyze key business metrics w
 
 This analysis demonstrates the power of data-driven decision-making and showcases how practical insights can inform business strategies and optimize operations. Through this project, I showcased my ability to use both basic and complex SQL for data extraction and data aggregations and ultimately providing actionable recommendations for business growth.
 
+### Reference
+- The Northwind Database was accessed and downloaded from the official [Microsoft SQL Server Samples repository on GitHub](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs).
+- Documentation on how to use the Northwind Database file can be accessed from the official [Microsoft SQL Server Samples repository on GitHub](https://github.com/microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs#readme)
 
 
