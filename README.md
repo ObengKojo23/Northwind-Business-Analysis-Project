@@ -122,7 +122,6 @@ Based on my analysis, below is a summary of the most significant findings I made
 These discovered relationships will be the foundational tool for me to the Northwind database's structure and my guide to how tables interact for the various queries I will be using to answer the key business questions and bring the needed insights. This exploration step was needed as the main catalyst to an accurate and meaningful results in the overall project.
 
 ---
-
  <a id="three"></a>
 ## **❓ 3. Business Questions and Analysis**
 <a href=#cont>Back to Project Structure</a>
@@ -411,7 +410,6 @@ I used this query to calculate the average processing time for each employee by 
 - **Employee Morale**: Recognizing high performers and providing training for others will foster a positive work environment and encourage continuous improvement.
 
 ---
-
  <a id="four"></a>
 ## **🔚 4. Summary**
 <a href=#cont>Back to Project Structure</a>
@@ -425,6 +423,7 @@ In this project, I used the Northwind database to analyze key business metrics w
 
 This analysis demonstrates the power of data-driven decision-making and showcases how practical insights can inform business strategies and optimize operations. Through this project, I showcased my ability to use both basic and complex SQL for data extraction and data aggregations and ultimately providing actionable recommendations for business growth.
 
+---
 <a id="five"></a>
 ## **🔚 5. Project Details**
 <a href=#cont>Back to Project Structure</a>
@@ -437,7 +436,6 @@ This analysis demonstrates the power of data-driven decision-making and showcase
 - **Information Schema Views:** leveraged to access metadata about table constraints and keys and general table relationships.
 - **Git/GitHub:** Used as my version control tool to manage and document my project documentation changes and sharing of findings.
 - **Markdown:**I used Markdown for project documentation, including README files, to enhance clarity and structure for this final report.
-
 
 ### 5.2 Skills Employed 🧠 
 - **SQL Querying, Optimization, Data Aggregation and Transformation:** Developed efficient SQL queries for data retrieval, filtering, aggregation, summerizing, and analyzing using commands such as `SELECT`, `JOIN`, `GROUP BY`, `ORDER BY`, `SUM()`, `COUNT()`, `AVG()`, and `DATEDIFF()`.
@@ -460,12 +458,11 @@ This analysis demonstrates the power of data-driven decision-making and showcase
    
 2. **Install Requirements**  
    Install the required softwares by going through the requirements.md file. Detailed instructions and links are made avaliable within the documentation file.
-   
 
 ### 5.4 Files
-- [Click here](./sql%20file/all_sql.sql) to download the `.sql` file that contains all the sql commands i used in this project.
-- [Click here](./problem%20statement/Project_Statement(NorthwindTraders).docx) to download the full problem statement for this project.
-- 
+- [Click here](./sql%20file/all_sql.sql) to download the `.sql` file that contains all the sql commands with comments as explanation to each link of query I used in this project.
+- [Click here](./problem%20statement/Project_Statement(NorthwindTraders).docx) to download a `.sql` file that contains all the SQL commands, with comments explaining each step of the queries I used in this project.
+ 
 ### 5.5 Reference
 - The Northwind Database was accessed and downloaded from the official [Microsoft SQL Server Samples repository on GitHub](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs).
 - Documentation on how to use the Northwind Database file can be accessed from the official [Microsoft SQL Server Samples repository on GitHub](https://github.com/microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs#readme)
