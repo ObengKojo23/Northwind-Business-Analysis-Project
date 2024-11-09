@@ -428,7 +428,7 @@ In this project, I used the Northwind database to analyze key business metrics w
 This analysis demonstrates the power of data-driven decision-making and showcases how practical insights can inform business strategies and optimize operations. Through this project, I showcased my ability to use both basic and complex SQL for data extraction and data aggregations and ultimately providing actionable recommendations for business growth.
 
 <a id="five"></a>
-## **🔚 5. Project Details **
+## **🔚 5. Project Details**
 <a href=#cont>Back to Project Structure</a>
 
 ### 5.1 Tools and Technologies Used 🛠
