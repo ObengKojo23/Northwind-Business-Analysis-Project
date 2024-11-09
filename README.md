@@ -461,7 +461,7 @@ This analysis demonstrates the power of data-driven decision-making and showcase
 
 ### 5.4 Files
 - [Click here](./sql%20file/all_sql.sql) to download the `.sql` file that contains all the sql commands with comments as explanation to each link of query I used in this project.
-- [Click here](./problem%20statement/Project_Statement(NorthwindTraders).docx) to download a `.sql` file that contains all the SQL commands, with comments explaining each step of the queries I used in this project.
+- [Click here](./problem%20statement/Project_Statement.docx) to download a `.sql` file that contains all the SQL commands, with comments explaining each step of the queries I used in this project.
  
 ### 5.5 Reference
 - The Northwind Database was accessed and downloaded from the official [Microsoft SQL Server Samples repository on GitHub](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs).
