@@ -24,10 +24,12 @@
 The Northwind database is a database provided by `Microsoft` that models a fictional company called Northwind Traders. This fictious company imports and exports specialty foods from all around the world. The database is organized around typical sales and supply chain data, making it useful for an ideal project that showcase how to handle common business scenarios.
 It includes information about orders, customers, suppliers, products, employees, and shippers.
 
-### 1.2 Objective 🎯
+### 1.2 Problem Statement ⚠️
+
+#### 1.2.1 Objective 🎯
 As the CEO of Tradewind Trader, I am commissioning a data-driven project to uncover critical insights across our customer base, product categories, and sales trends, as well as assess employee performance and discount impacts. Your analysis will aim to answer essential business questions and provide actionable recommendations that support strategic decision-making in customer engagement, revenue growth, and operational efficiency. Given that SQL will be used exclusively, this project will not involve data visualization but should deliver clear and well-documented query outputs for each key question.
 
-### 1.3 Key Deliverables 🔑
+#### 1.2.3 Key Deliverables 🔑
 - SQL Query Outputs: Provide the complete SQL scripts for each question, with clear comments explaining each step in the queries.
 - Business Insights Summary: Along with your queries, include brief summaries of your findings for each question. These summaries should offer straightforward insights that align with business needs.
 - Actionable Recommendations: Based on your insights, provide well-grounded recommendations for strategic actions or operational improvements.
