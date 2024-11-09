@@ -1,21 +1,5 @@
 # Northwind Business Analysis Project
 ---
-<a id="cont"></a>
-
-### **Project Structure**
-
-<a href=#one>1. Introduction</a>
-
-<a href=#two>2. Data Exploration and Preparation</a>
-
-<a href=#three>3. Business Questions and Analysis</a>
-
-<a href=#four>4. Summary</a>
-
-<a href=#five>5. Project Details</a>
-
----
-
  <a id="one"></a>
 ## **🌍 1. Introduction**
 <a href=#cont>Back to Project Structure</a>
@@ -38,7 +22,21 @@ As the CEO of Tradewind Trader, I am commissioning a data-driven project to unco
 [Click here](./problem%20statement/Project_Statement(NorthwindTraders).docx) to download the full problem statement for this project.
 
 ---
+<a id="cont"></a>
 
+### **Project Structure**
+
+<a href=#one>1. Introduction</a>
+
+<a href=#two>2. Data Exploration and Preparation</a>
+
+<a href=#three>3. Business Questions and Analysis</a>
+
+<a href=#four>4. Summary</a>
+
+<a href=#five>5. Project Details</a>
+
+---
  <a id="two"></a>
 ## **📊 2. Data Exploration and Preparation**
 <a href=#cont>Back to Project Structure</a>
