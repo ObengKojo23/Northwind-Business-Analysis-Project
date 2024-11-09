@@ -1,4 +1,4 @@
-![](./images/banner)
+![Banner Image](./images/banner.png)
 
 # Northwind Business Analysis Project
 ---
