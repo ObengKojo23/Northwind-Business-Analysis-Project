@@ -12,7 +12,7 @@
 
 <a href=#four>4. Summary</a>
 
-<a href=#five>5. Conclusion</a>
+<a href=#five>5. Project Details</a>
 
 ---
 
@@ -428,7 +428,7 @@ In this project, I used the Northwind database to analyze key business metrics w
 This analysis demonstrates the power of data-driven decision-making and showcases how practical insights can inform business strategies and optimize operations. Through this project, I showcased my ability to use both basic and complex SQL for data extraction and data aggregations and ultimately providing actionable recommendations for business growth.
 
 <a id="five"></a>
-## **🔚 5. Conclusion**
+## **🔚 5. Project Details **
 <a href=#cont>Back to Project Structure</a>
 
 ### 5.1 Tools and Technologies Used 🛠
@@ -466,7 +466,8 @@ This analysis demonstrates the power of data-driven decision-making and showcase
 
 ### 5.4 Files
 - [Click here](./sql%20file/all_sql.sql) to download the `.sql` file that contains all the sql commands i used in this project.
-
+- [Click here](./problem%20statement/Project_Statement(NorthwindTraders).docx) to download the full problem statement for this project.
+- 
 ### 5.5 Reference
 - The Northwind Database was accessed and downloaded from the official [Microsoft SQL Server Samples repository on GitHub](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs).
 - Documentation on how to use the Northwind Database file can be accessed from the official [Microsoft SQL Server Samples repository on GitHub](https://github.com/microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs#readme)
