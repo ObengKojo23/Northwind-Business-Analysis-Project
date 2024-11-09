@@ -1,3 +1,5 @@
+![](./images/banner)
+
 # Northwind Business Analysis Project
 ---
  <a id="one"></a>
