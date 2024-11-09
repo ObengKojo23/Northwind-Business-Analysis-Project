@@ -10,7 +10,9 @@
 
 <a href=#three>3. Business Questions and Analysis</a>
 
-<a href=#four>4. Conclusion</a>
+<a href=#four>4. Summary</a>
+
+<a href=#five>5. Conclusion</a>
 
 ---
 
@@ -21,45 +23,18 @@
 ### 1.1 Database Overview 📝 
 The Northwind database is a database provided by `Microsoft` that models a fictional company called Northwind Traders. This fictious company imports and exports specialty foods from all around the world. The database is organized around typical sales and supply chain data, making it useful for an ideal project that showcase how to handle common business scenarios.
 It includes information about orders, customers, suppliers, products, employees, and shippers.
- 
-### 1.2 Objective 🔑 
-To analyze Northwind Traders' business data and gain actionable insights in areas such as customer behavior, sales trends, product performance, and employee productivity using SQL in SSMS.
 
-### 1.3 Tools and Technologies Used 🛠
+### 1.2 Objective 🎯
+As the CEO of Tradewind Trader, I am commissioning a data-driven project to uncover critical insights across our customer base, product categories, and sales trends, as well as assess employee performance and discount impacts. Your analysis will aim to answer essential business questions and provide actionable recommendations that support strategic decision-making in customer engagement, revenue growth, and operational efficiency. Given that SQL will be used exclusively, this project will not involve data visualization but should deliver clear and well-documented query outputs for each key question.
 
-- **SQL Server Management Studio (SSMS)** – The primary tool used for writing and executing SQL queries, and managing database schemas.
-- **SQL** – The core language Used for data extraction, transformation, analysis, and aggregation within the database.
-- **Microsoft SQL Server** – The database management system where I stored, queried, and maintained the Northwind database.
-- **Database Diagram Tool (SSMS):** Used to create visual representations of database relationships and view foreign key dependencies.
-- **Information Schema Views:** leveraged to access metadata about table constraints and keys and general table relationships.
-- **Git/GitHub:** Used as my version control tool to manage and document my project documentation changes and sharing of findings.
-- **Markdown:**I used Markdown for project documentation, including README files, to enhance clarity and structure for this final report.
+### 1.3 Key Deliverables 🔑
+- SQL Query Outputs: Provide the complete SQL scripts for each question, with clear comments explaining each step in the queries.
+- Business Insights Summary: Along with your queries, include brief summaries of your findings for each question. These summaries should offer straightforward insights that align with business needs.
+- Actionable Recommendations: Based on your insights, provide well-grounded recommendations for strategic actions or operational improvements.
+- Impact Analysis: For each area of analysis, assess potential impacts on revenue, customer satisfaction, and operational efficiency, clearly justifying recommendations based on data trends.
 
+[Click here](./problem%20statement/Project_Statement(NorthwindTraders).docx) to download the full problem statement for this project.
 
-### 1.4 Skills Employed 🧠 
-
-- **SQL Querying, Optimization, Data Aggregation and Transformation:** Developed efficient SQL queries for data retrieval, filtering, aggregation, summerizing, and analyzing using commands such as `SELECT`, `JOIN`, `GROUP BY`, `ORDER BY`, `SUM()`, `COUNT()`, `AVG()`, and `DATEDIFF()`.
-- **Advanced SQL Techniques:** Employed window functions, Common Table Expressions (CTEs), subqueries, and `CASE` statements.
-- **Data Validation and Integrity Checks:** Ensured data quality by filtering and validating relationships across joined tables.
-- **Relational Database Management:** Analyzed table relationships, including many-to-many and one-to-many connections.
-- **Employee Productivity Analysis:** Calculated metrics like to assess individual employee performance and productivity.
-- **Customer Segmentation:** Segmented order frequency, revenue contributions, and purchase behaviors in customer analysis.
-- **Product Performance Analysis:** Identified top-selling products through aggregated sales data, aiding in stocking.
-- **Time-Series Analysis:** Conducted trend analysis over time to identify patterns and inform business decisions.
-- **Data Integrity with Primary and Foreign Keys** – Structured queries based on database keys to maintain data integrity.
-- **Business Intelligence:** Extracted actionable business insights on customer behavior, employee performance, and sales.
-- **Project Documentation:** Documented all analysis steps, queries, and findings to ensure reproducibility and clarity.
-
-### 1.5 How to Run This Project 🚀 
-
-1. **Clone the Repository**  
-   Run the following command to clone the repository to your local machine:
-   ```bash
-   git clone https://github.com/ObengKojo23/Northwind-Business-Analysis-Project.git
-   
-2. **Install Requirements**  
-   Install the required softwares by going through the requirements.md file. Detailed instructions and links are made avaliable within the documentation file.
-   
 ---
 
  <a id="two"></a>
@@ -438,24 +413,59 @@ I used this query to calculate the average processing time for each employee by 
 ---
 
  <a id="four"></a>
-## **🔚 3. Conclusion**
+## **🔚 4. Summary**
 <a href=#cont>Back to Project Structure</a>
 
 In this project, I used the Northwind database to analyze key business metrics which helped me to gain valuable insights into customer behavior, product performance, and employee productivity. Through SQL queries, I identified top customers, evaluated sales trends, and assessed the impact of discounts on order frequency and quantity.
 
-### Key findings include:
+### Key findings include 💡
 - **Customer Engagement**: Customers with higher order frequencies contribute significantly to overall revenue of Northwind Trader. This suggests that engagement strategies should focus on repeat buyers.
 - **Employee Productivity**: Employees who process orders faster are linked to improved operational efficiency. This could lead to better customer satisfaction and quicker delivery times.
 - **Discount Strategy**: Discounts had a positive effect on both order frequency and total quantity purchased. This indicates that targeted discount strategies can help in driving bulk buying and increase sales volume.
 
 This analysis demonstrates the power of data-driven decision-making and showcases how practical insights can inform business strategies and optimize operations. Through this project, I showcased my ability to use both basic and complex SQL for data extraction and data aggregations and ultimately providing actionable recommendations for business growth.
 
-### Files
-- [Click here](./problem%20statement/Project_Statement(NorthwindTraders).docx) to download the problem statement for this project.
+<a id="five"></a>
+## **🔚 5. Conclusion**
+<a href=#cont>Back to Project Structure</a>
 
+### 5.1 Tools and Technologies Used 🛠
+- **SQL Server Management Studio (SSMS)** – The primary tool used for writing and executing SQL queries, and managing database schemas.
+- **SQL** – The core language Used for data extraction, transformation, analysis, and aggregation within the database.
+- **Microsoft SQL Server** – The database management system where I stored, queried, and maintained the Northwind database.
+- **Database Diagram Tool (SSMS):** Used to create visual representations of database relationships and view foreign key dependencies.
+- **Information Schema Views:** leveraged to access metadata about table constraints and keys and general table relationships.
+- **Git/GitHub:** Used as my version control tool to manage and document my project documentation changes and sharing of findings.
+- **Markdown:**I used Markdown for project documentation, including README files, to enhance clarity and structure for this final report.
+
+
+### 5.2 Skills Employed 🧠 
+- **SQL Querying, Optimization, Data Aggregation and Transformation:** Developed efficient SQL queries for data retrieval, filtering, aggregation, summerizing, and analyzing using commands such as `SELECT`, `JOIN`, `GROUP BY`, `ORDER BY`, `SUM()`, `COUNT()`, `AVG()`, and `DATEDIFF()`.
+- **Advanced SQL Techniques:** Employed window functions, Common Table Expressions (CTEs), subqueries, and `CASE` statements.
+- **Data Validation and Integrity Checks:** Ensured data quality by filtering and validating relationships across joined tables.
+- **Relational Database Management:** Analyzed table relationships, including many-to-many and one-to-many connections.
+- **Employee Productivity Analysis:** Calculated metrics like to assess individual employee performance and productivity.
+- **Customer Segmentation:** Segmented order frequency, revenue contributions, and purchase behaviors in customer analysis.
+- **Product Performance Analysis:** Identified top-selling products through aggregated sales data, aiding in stocking.
+- **Time-Series Analysis:** Conducted trend analysis over time to identify patterns and inform business decisions.
+- **Data Integrity with Primary and Foreign Keys** – Structured queries based on database keys to maintain data integrity.
+- **Business Intelligence:** Extracted actionable business insights on customer behavior, employee performance, and sales.
+- **Project Documentation:** Documented all analysis steps, queries, and findings to ensure reproducibility and clarity.
+
+### 5.3 How to Run This Project 🚀 
+1. **Clone the Repository**  
+   Run the following command to clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/ObengKojo23/Northwind-Business-Analysis-Project.git
+   
+2. **Install Requirements**  
+   Install the required softwares by going through the requirements.md file. Detailed instructions and links are made avaliable within the documentation file.
+   
+
+### 5.4 Files
 - [Click here](./sql%20file/all_sql.sql) to download the `.sql` file that contains all the sql commands i used in this project.
 
-### Reference
+### 5.5 Reference
 - The Northwind Database was accessed and downloaded from the official [Microsoft SQL Server Samples repository on GitHub](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs).
 - Documentation on how to use the Northwind Database file can be accessed from the official [Microsoft SQL Server Samples repository on GitHub](https://github.com/microsoft/sql-server-samples/tree/master/samples/databases/northwind-pubs#readme)
 
