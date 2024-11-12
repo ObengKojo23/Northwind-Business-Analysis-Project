@@ -471,4 +471,11 @@ This analysis demonstrates the power of data-driven decision-making and showcase
 3. Original Banner image sourced from [FreePik](https://www.freepik.com) and redesigned by me `(ObengKojo)`.
 
 
+## Contact
+For any questions or suggestions, feel free to reach out:
+
+- **LinkedIn**: [LinkedIn Page](https://www.linkedin.com/in/obengafari)
+- **GitHub**: [GitHub page](https://github.com/ObengKojo23)
+- **YouTube**: [My YouTube tutorials](https://youtube.com/@obengkojo)
+---
 
