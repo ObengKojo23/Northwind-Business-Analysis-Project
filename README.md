@@ -23,6 +23,8 @@ As the CEO of Northwind Traders, I am commissioning you on this data-driven proj
 
 [Click here](./problem%20statement/Project_Statement(NorthwindTraders).docx) to download the full problem statement for this project.
 
+[Click here](./problem%20statement/Project_Statement.docx) to download the full problem statement for this project.
+Northwind-Business-Analysis-Project/blob/main/problem%20statement/Project_Statement.docx
 ---
 <a id="cont"></a>
 
