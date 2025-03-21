@@ -21,10 +21,8 @@ As the CEO of Northwind Traders, I am commissioning you on this data-driven proj
 - Actionable Recommendations: Based on your insights, provide well-grounded recommendations for strategic actions or operational improvements.
 - Impact Analysis: For each area of analysis, assess potential impacts on revenue, customer satisfaction, and operational efficiency, clearly justifying recommendations based on data trends.
 
-[Click here](./problem%20statement/Project_Statement(NorthwindTraders).docx) to download the full problem statement for this project.
-
 [Click here](./problem%20statement/Project_Statement.docx) to download the full problem statement for this project.
-Northwind-Business-Analysis-Project/blob/main/problem%20statement/Project_Statement.docx
+
 ---
 <a id="cont"></a>
 
